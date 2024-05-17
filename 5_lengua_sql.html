@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5. Lengua SQL | Tecnología de la Información y la Comunicación: Bases de datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="IEDA, Ana Echarri" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-63"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Tecnología de la Información y la Comunicación: Bases de datos</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tecnologías de la Información y la Comuniación: Bases de datos</a></li>
+   <li><a href="1_bases_de_datos_definicin.html" class="daddy">1. Bases de datos. Definición</a>
+   <ul class="other-section">
+      <li><a href="11_diseo_de_bases_de_datos.html" class="no-ch">1.1. Diseño de Bases de datos</a></li>
+      <li><a href="12_elementos_de_diseo.html" class="no-ch">1.2. Elementos de diseño</a></li>
+      <li><a href="13_bases_de_datos_relacionales.html" class="no-ch">1.3. Bases de datos relacionales</a></li>
+      <li><a href="14_accesos_y_usuarios.html" class="no-ch">1.4. Accesos y usuarios</a></li>
+   </ul>
+   </li>
+   <li><a href="2_sistemas_de_gestin_de_bases_de_datos.html" class="daddy">2. Sistemas de gestión de bases de datos</a>
+   <ul class="other-section">
+      <li><a href="21_openofficeorg_base.html" class="no-ch">2.1. OpenOffice.org Base</a></li>
+      <li><a href="22_creacin_de_una_base_de_datos.html" class="no-ch">2.2. Creación de una base de datos</a></li>
+      <li><a href="23_entorno_de_trabajo.html" class="no-ch">2.3. Entorno de trabajo</a></li>
+   </ul>
+   </li>
+   <li><a href="3_tablas_y_relaciones.html" class="daddy">3. Tablas y Relaciones</a>
+   <ul class="other-section">
+      <li><a href="31_creacin_de_tablas.html" class="no-ch">3.1. Creación de tablas</a></li>
+      <li><a href="32_tipos_de_datos.html" class="no-ch">3.2. Tipos de datos</a></li>
+      <li><a href="33_edicin_de_tablas_y_registros.html" class="no-ch">3.3. Edición de tablas y registros</a></li>
+      <li><a href="34_operaciones_con_registros.html" class="no-ch">3.4. Operaciones con registros</a></li>
+      <li><a href="35_relaciones.html" class="no-ch">3.5. Relaciones</a></li>
+   </ul>
+   </li>
+   <li><a href="4_manipulacin_y_edicin_de_bases_de_datos.html" class="daddy">4.- Manipulación y edición de Bases de datos</a>
+   <ul class="other-section">
+      <li><a href="41_consultas.html" class="daddy">4.1. Consultas</a>
+      <ul class="other-section">
+         <li><a href="411_asistente.html" class="no-ch">4.1.1. Asistente</a></li>
+         <li><a href="412_vista_diseo.html" class="no-ch">4.1.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="42_formularios.html" class="daddy">4.2. Formularios</a>
+      <ul class="other-section">
+         <li><a href="421_asistente.html" class="no-ch">4.2.1. Asistente</a></li>
+         <li><a href="422_vista_diseo.html" class="no-ch">4.2.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="43_informes.html" class="daddy">4.3. Informes</a>
+      <ul class="other-section">
+         <li><a href="431_asistente.html" class="no-ch">4.3.1. Asistente</a></li>
+         <li><a href="432_edicin.html" class="no-ch">4.3.2. Edición</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li id="active"><a href="5_lengua_sql.html" class="active daddy">5. Lengua SQL</a>
+   <ul>
+      <li><a href="51_comandos_y_sintaxis.html" class="no-ch">5.1. Comandos y sintaxis</a></li>
+      <li><a href="52_clusulas_y_palabras_reservadas.html" class="no-ch">5.2. Cláusulas y palabras reservadas</a></li>
+      <li><a href="53_consultas_de_seleccin.html" class="no-ch">5.3. Consultas de selección</a></li>
+      <li><a href="54_consultas_de_accin.html" class="no-ch">5.4. Consultas de acción</a></li>
+   </ul>
+   </li>
+   <li><a href="resumen.html" class="no-ch">Resumen</a></li>
+   <li><a href="imprimible.html" class="no-ch">Imprimible</a></li>
+   <li><a href="aviso_legal.html" class="no-ch">Aviso Legal</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="432_edicin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="51_comandos_y_sintaxis.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">5. Lengua SQL</h1></div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id190">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Importante</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta190_293_7" class="block iDevice_content">
+<div align="justify">El <b>lenguaje de consultas estructurado (Structured Query Language)</b> es el lenguaje declarativo de alto nivel diseñado para realizar operaciones con conjuntos de registros en bases de datos relacionales mediante el uso del álgebra y del cálculo relacional.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id247">
+<div class="iDevice emphasis0">
+<div id="ta247_1" class="block iDevice_content">
+<p></p>
+<table style="float: left;" cellpadding="10" border="0">
+<tbody>
+<tr>
+<td style="width: 465.483px;">
+<p></p>
+<p style="text-align: center;"><em><span style="font-size: 10pt;"> <img src="editar_en_sql.png" alt="editar vista sql" title="editar vista sql" width="233" height="228" /></span></em><br /><em><span size="1" style="font-size: 10pt;">Editar en vista SQL</span></em></p>
+</td>
+<td style="width: 1037.52px; vertical-align: top;">
+<p>Las consultas diseñadas en los SGBD son implementaciones del lenguaje SQL.</p>
+<p></p>
+<p>De hecho, desde cualquier consulta en OOo Base se puede acceder a su vista en SQL haciendo clic en botón derecho. </p>
+</td>
+</tr>
+<tr>
+<td style="width: 465.483px;" colspan="2">
+<p style="text-align: left;">En la siguiente imagen se muestra la vista SQL de una consulta realizada en OOo Base. La apariencia es la de un texto con expresiones y nombres de campos y tablas de la base de datos. Por eso, el diseño consultas en SQL requiere un conocimiento avanzado de sus elementos y su sintaxis.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 465.483px; vertical-align: top;">
+<p align="justify">Esta es la traducción que hace OOo Base de una consulta y este es el formato elegido para distinguir rápidamente los elementos de SQL.</p>
+</td>
+<td style="width: 1037.52px;">
+<p style="text-align: left;"><em><span size="1" style="font-size: 10pt;">Vista SQL</span></em></p>
+<p><img src="vista_sql.png" alt="vista sql" title="vista sql" style="float: left;" width="399" height="185" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper ClozeIdevice em_iDevice em_iDevice_question" id="id249">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta249_21" class="block instructions iDevice_content">
+
+</div>
+
+    <div class="activity" id="activity-249_22"><form name="cloze-form-249_22" action="#" class="activity-form cloze-activity-form"><div id="cloze249_22"><input type="hidden" name="clozeFlag249_22.strictMarking" id="clozeFlag249_22.strictMarking" value="true"/>
+<input type="hidden" name="clozeFlag249_22.checkCaps" id="clozeFlag249_22.checkCaps" value="false"/>
+<input type="hidden" name="clozeFlag249_22.instantMarking" id="clozeFlag249_22.instantMarking" value="false"/>
+<input type="hidden" name="clozeVar249_22.feedbackId" id="clozeVar249_22.feedbackId" value="ta249_23"/>
+<p>
+SQL es un lenguaje de       <label for="clozeBlank249_22.0" class="sr-av">Rellenar huecos (1):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank249_22.0" style="width:4ch" /><span style="display:none" id="clozeAnswer249_22.0">JXUwMDM5JXUwMDBkJXUwMDE4JXUwMDFi
+</span>       nivel diseñado para realizar operaciones en bases de datos      <label for="clozeBlank249_22.1" class="sr-av">Rellenar huecos (2):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank249_22.1" style="width:12ch" /><span style="display:none" id="clozeAnswer249_22.1">JXUwMDJhJXUwMDE3JXUwMDA5JXUwMDBkJXUwMDAyJXUwMDBhJXUwMDA2JXUwMDAxJXUwMDBmJXUw
+MDBkJXUwMDA5JXUwMDE2
+</span>     .
+</p>
+<p>
+Su sintaxis con sentencias formadas por      <label for="clozeBlank249_22.2" class="sr-av">Rellenar huecos (3):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank249_22.2" style="width:11ch" /><span style="display:none" id="clozeAnswer249_22.2">JXUwMDNkJXUwMDFkJXUwMDA4JXUwMDAyJXUwMDE3JXUwMDE2JXUwMDFhJXUwMDA2JXUwMDAxJXUw
+MDBiJXUwMDE2
+</span>      y nombres de      <label for="clozeBlank249_22.3" class="sr-av">Rellenar huecos (4):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank249_22.3" style="width:6ch" /><span style="display:none" id="clozeAnswer249_22.3">JXUwMDNiJXUwMDAyJXUwMDBjJXUwMDFkJXUwMDFmJXUwMDFj
+</span>      y      <label for="clozeBlank249_22.4" class="sr-av">Rellenar huecos (5):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank249_22.4" style="width:6ch" /><span style="display:none" id="clozeAnswer249_22.4">JXUwMDJjJXUwMDE1JXUwMDAzJXUwMDBlJXUwMDBkJXUwMDEy
+</span>      de la base de datos.
+</p>
+<p>
+Las consultas diseñadas en OOo Base pueden ser editadas en     <label for="clozeBlank249_22.5" class="sr-av">Rellenar huecos (6):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank249_22.5" style="width:5ch" /><span style="display:none" id="clozeAnswer249_22.5">JXUwMDJlJXUwMDFmJXUwMDFhJXUwMDA3JXUwMDE1
+</span>         <label for="clozeBlank249_22.6" class="sr-av">Rellenar huecos (7):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank249_22.6" style="width:3ch" /><span style="display:none" id="clozeAnswer249_22.6">JXUwMDBiJXUwMDAyJXUwMDFk
+</span>    . 
+</p>
+<div class="block iDevice_buttons"><p><input class="button" type="submit" name="submit249_22" value="Enviar"  id="submit249_22" />
+<input type="button" name="restart249_22" value="Reiniciar" style="display:none" id="restart249_22" onclick="$exe.cloze.restart('249_22')" />
+ <input type="button" name="249_22showAnswersButton" value="Mostrar las respuestas" style="display:none" id="showAnswersButton249_22" onclick="$exe.cloze.fillInputs('249_22')" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span></p></div><div id="clozeScore249_22"></div></div></form></div>
+    <div id="ta249_23" class="feedback js-feedback iDevice_content" style="display:none">
+El término declarativo<span style="background-color: #ffff00"> hace r</span>eferencia a que en cada sentencia se indica explícitamente lo que se desea hacer.
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id250">
+<div class="iDevice emphasis0">
+<div id="ta250_1" class="block iDevice_content">
+<table border="0">
+<tbody>
+<tr>
+<td style="border: 1px solid #ffffff;">En OOo Base, el panel de tareas con consultas permite crear una consulta directamente en vista SQL.</td>
+<td style="border: 1px solid #ffffff;">
+<div style="text-align: center;"><img src="m1_tareas.png" alt="crear consulta en SQL" title="crear consulta en SQL" width="298" height="113" /></div>
+<div align="center"><em><span style="font-size: 10pt;">Tareas de creación de consultas</span></em></div>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ffffff;">La pantalla que aparece es un editor de texto en blanco. Para crear una consulta es necesario conocer la sintaxis y las sentencias SQL.</td>
+<td style="border: 1px solid #ffffff;">
+<p><img src="crear_en_sql.png" alt="editor SQL" title="editor SQL" width="379" height="116" /></p>
+<p align="center"><em><span style="font-size: 10pt;">Editor de consultas en SQL</span></em></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice em_iDevice_saber" id="id246">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Para saber más</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta246_301_10" class="block iDevice_content">
+<p align="justify">Observa que en el nombre de varios de los Sistemas de gestión de Bases de datos relacionales que hemos visto se repiten las siglas <b>SQL</b>, que hacen referencia al lenguaje de consultas estructurado (Structured Query Language).</p>
+<p align="justify">El uso de este lenguaje es una de las mayores ventajas de las bases de datos relacionales, puesto que posibilita el acceso a los datos para obtener informes o actualizar datos de forma sencilla y eficaz.</p>
+<p align="justify"></p>
+<div align="justify"><span color="#800000"><b>Breve historia</b></span></div>
+<div align="justify"> </div>
+<div align="justify">Cuando, en 1970, se crean las bases de datos relacionales, también se crea un lenguaje que permita realizar operaciones de consulta y modificación de los datos.</div>
+<div align="justify"></div>
+<div align="justify">El nacimiento de los SGBD significó la implementación del lenguaje de consultas y, aunque IBM trabajó en un antecesor denominado SEQUEL, fue Oracle quién primero lo lanzó al mercado.</div>
+<div align="justify"></div>
+<div align="justify">Su primera versión estandarizada por el ANSI se lanzó en 1986. A partir de ésta, se incorporan nuevos comandos y cláusulas.<span></span></div>
+<div align="justify"></div>
+<div align="justify">Para ampliar esta breve historia lee el siguiente artículo: <a href="http://es.wikipedia.org/wiki/SQL" target="_blank" rel="noopener">SQL_historia</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="432_edicin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="51_comandos_y_sintaxis.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

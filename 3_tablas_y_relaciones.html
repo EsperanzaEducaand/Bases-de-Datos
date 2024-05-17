@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3. Tablas y Relaciones | Tecnología de la Información y la Comunicación: Bases de datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="IEDA, Ana Echarri" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-47"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Tecnología de la Información y la Comunicación: Bases de datos</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tecnologías de la Información y la Comuniación: Bases de datos</a></li>
+   <li><a href="1_bases_de_datos_definicin.html" class="daddy">1. Bases de datos. Definición</a>
+   <ul class="other-section">
+      <li><a href="11_diseo_de_bases_de_datos.html" class="no-ch">1.1. Diseño de Bases de datos</a></li>
+      <li><a href="12_elementos_de_diseo.html" class="no-ch">1.2. Elementos de diseño</a></li>
+      <li><a href="13_bases_de_datos_relacionales.html" class="no-ch">1.3. Bases de datos relacionales</a></li>
+      <li><a href="14_accesos_y_usuarios.html" class="no-ch">1.4. Accesos y usuarios</a></li>
+   </ul>
+   </li>
+   <li><a href="2_sistemas_de_gestin_de_bases_de_datos.html" class="daddy">2. Sistemas de gestión de bases de datos</a>
+   <ul class="other-section">
+      <li><a href="21_openofficeorg_base.html" class="no-ch">2.1. OpenOffice.org Base</a></li>
+      <li><a href="22_creacin_de_una_base_de_datos.html" class="no-ch">2.2. Creación de una base de datos</a></li>
+      <li><a href="23_entorno_de_trabajo.html" class="no-ch">2.3. Entorno de trabajo</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="3_tablas_y_relaciones.html" class="active daddy">3. Tablas y Relaciones</a>
+   <ul>
+      <li><a href="31_creacin_de_tablas.html" class="no-ch">3.1. Creación de tablas</a></li>
+      <li><a href="32_tipos_de_datos.html" class="no-ch">3.2. Tipos de datos</a></li>
+      <li><a href="33_edicin_de_tablas_y_registros.html" class="no-ch">3.3. Edición de tablas y registros</a></li>
+      <li><a href="34_operaciones_con_registros.html" class="no-ch">3.4. Operaciones con registros</a></li>
+      <li><a href="35_relaciones.html" class="no-ch">3.5. Relaciones</a></li>
+   </ul>
+   </li>
+   <li><a href="4_manipulacin_y_edicin_de_bases_de_datos.html" class="daddy">4.- Manipulación y edición de Bases de datos</a>
+   <ul class="other-section">
+      <li><a href="41_consultas.html" class="daddy">4.1. Consultas</a>
+      <ul class="other-section">
+         <li><a href="411_asistente.html" class="no-ch">4.1.1. Asistente</a></li>
+         <li><a href="412_vista_diseo.html" class="no-ch">4.1.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="42_formularios.html" class="daddy">4.2. Formularios</a>
+      <ul class="other-section">
+         <li><a href="421_asistente.html" class="no-ch">4.2.1. Asistente</a></li>
+         <li><a href="422_vista_diseo.html" class="no-ch">4.2.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="43_informes.html" class="daddy">4.3. Informes</a>
+      <ul class="other-section">
+         <li><a href="431_asistente.html" class="no-ch">4.3.1. Asistente</a></li>
+         <li><a href="432_edicin.html" class="no-ch">4.3.2. Edición</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="5_lengua_sql.html" class="daddy">5. Lengua SQL</a>
+   <ul class="other-section">
+      <li><a href="51_comandos_y_sintaxis.html" class="no-ch">5.1. Comandos y sintaxis</a></li>
+      <li><a href="52_clusulas_y_palabras_reservadas.html" class="no-ch">5.2. Cláusulas y palabras reservadas</a></li>
+      <li><a href="53_consultas_de_seleccin.html" class="no-ch">5.3. Consultas de selección</a></li>
+      <li><a href="54_consultas_de_accin.html" class="no-ch">5.4. Consultas de acción</a></li>
+   </ul>
+   </li>
+   <li><a href="resumen.html" class="no-ch">Resumen</a></li>
+   <li><a href="imprimible.html" class="no-ch">Imprimible</a></li>
+   <li><a href="aviso_legal.html" class="no-ch">Aviso Legal</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="23_entorno_de_trabajo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="31_creacin_de_tablas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">3. Tablas y Relaciones</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id152">
+<div class="iDevice emphasis0">
+<div id="ta152_1" class="block iDevice_content">
+<table cellpadding="10" border="0" align="right">
+<tbody>
+<tr>
+<td style="text-align: center; border: 1px solid #ffffff;" align="center">
+<p></p>
+<div style="text-align: center;"><img src="f7b543eed41f7516e44b4298d6021a1b_1.jpg" alt="archivador" title="archivador" width="240" height="180" /></div>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; border: 1px solid #ffffff;" align="center"><span style="font-size: xx-small;"><em><span style="font-size: 10pt;">Fichero archivador.</span> </em><br /><span style="font-size: 8pt;"><a href="http://flickrcc.bluemountains.net/edit.php?pic=http://farm3.static.flickr.com/2406/1597123649_8c01e62458_m.jpg&amp;pid=1597123649&amp;s=8c01e62458&amp;a=www.flickr.com/photos/13388070@N06/1597123649" target="_blank" rel="noopener">Flickrcc</a>. Licencia CC</span></span></td>
+</tr>
+</tbody>
+</table>
+<div align="justify">
+<div align="justify">Recuerda que estás trabajando con bases de datos relacionales. Este modelo es muy utilizado debido a su capacidad para representar problemas reales y gestionar la información dinámicamente.</div>
+<div align="justify"> </div>
+<div align="justify">La estructura fundamental de almacenamiento de información es la tabla.</div>
+<div align="justify"></div>
+</div>
+<div align="justify"><strong>Una base de datos contiene distintas tablas con elementos distintos.</strong> Los registros de una determinada tabla están formados por unos campos, conteniendo cada tabla sus propios campos.</div>
+<div align="justify"> </div>
+<div align="justify">El conjunto de todos los datos almacenados en tablas conforma la base de datos.</div>
+<p align="justify">El ejemplo de base de datos más común es el sistema de <strong>gestión de una biblioteca</strong>. En dicha base se almacenan <span style="text-decoration: underline;">los libros</span> en una tabla cuyas columnas o campos son título, autor, editorial, año de publicación. Sin embargo, los datos de <span style="text-decoration: underline;">los usuario</span>s se almacenan en otra tabla cuyos campos son id_lector, nombre, apellidos, año_nac. Ambas tablas se relacionan en la tabla de <span style="text-decoration: underline;">préstamos</span>.</p>
+<p align="justify">Otro símil muy utilizado es un <strong>archivador de una oficina</strong> que contiene una carpeta por cada asunto: clientes, pedidos, empleados. Cada carpeta contiene datos semejantes, es decir, es una tabla.</p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id106">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Importante</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta106_285_7" class="block iDevice_content">
+<p>Una <b>tabla</b> es un conjunto de datos relacionados entre sí con una estructura común. Está compuesta por filas y columnas, siendo cada fila un <b>registro</b> y cada columna un <b>campo</b>.</p>
+<ul>
+<li>Se define un <b>registro</b> (o tupla) como un conjunto de datos relacionados que constituyen una entidad de una tabla. Según el modelo relacional no puede existir en una tabla dos registros idénticos.</li>
+<li>Se define un <b>campo</b> como una propiedad o atributo con unas condiciones determinadas y un nombre único en la tabla.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id154">
+<div class="iDevice emphasis0">
+<div id="ta154_1" class="block iDevice_content">
+<div align="justify">Cada <strong>registro</strong> es una entidad con unos atributos o propiedades determinadas, estos son los <strong>campos</strong>.</div>
+<p align="center"><img src="registro_y_campo.png" alt="tabla" title="tabla" width="590" height="110" /></p>
+<div align="center"><em><span style="font-size: 10pt;">Tabla: registros y campos</span></em></div>
+<p align="left"> </p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper ClozeIdevice em_iDevice em_iDevice_question" id="id156">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta156_21" class="block instructions iDevice_content">
+<p>
+Comprueba que has entendido bien los conceptos del apartado completando el siguiente crucigrama:
+</p>
+<ol>
+	<li>Conjunto de tablas y demás elementos necesarios para almacenar y gestionar información. (Sólo primera palabra).</li>
+	<li>Conjunto de datos con una misma estructura y distintos valores.</li>
+	<li>Última palabra de la definición 1.</li>
+	<li>Fila de una tabla.</li>
+	<li>Columna en una tabla.</li>
+</ol>
+
+</div>
+
+    <div class="activity" id="activity-156_22"><form name="cloze-form-156_22" action="#" class="activity-form cloze-activity-form"><div id="cloze156_22"><input type="hidden" name="clozeFlag156_22.strictMarking" id="clozeFlag156_22.strictMarking" value="true"/>
+<input type="hidden" name="clozeFlag156_22.checkCaps" id="clozeFlag156_22.checkCaps" value="false"/>
+<input type="hidden" name="clozeFlag156_22.instantMarking" id="clozeFlag156_22.instantMarking" value="false"/>
+<table border="0" cellspacing="3">
+	<tbody>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>3. </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> 1.<br/>
+			</td>
+			<td> </td>
+			<td> </td>
+			<td>      <label for="clozeBlank156_22.0" class="sr-av">Rellenar huecos (1):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.0" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.0">JXUwMDFj
+</span>      </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>      <label for="clozeBlank156_22.1" class="sr-av">Rellenar huecos (2):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.1" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.1">JXUwMDFh
+</span>      </td>
+			<td> </td>
+			<td> </td>
+			<td>      <label for="clozeBlank156_22.2" class="sr-av">Rellenar huecos (3):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.2" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.2">JXUwMDE5
+</span>      </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>      <label for="clozeBlank156_22.3" class="sr-av">Rellenar huecos (4):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.3" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.3">JXUwMDE5
+</span>      </td>
+			<td> 2.<br/>
+			</td>
+			<td> </td>
+			<td>      <label for="clozeBlank156_22.4" class="sr-av">Rellenar huecos (5):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.4" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.4">JXUwMDBj
+</span>      </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> 4.</td>
+			<td>      <label for="clozeBlank156_22.5" class="sr-av">Rellenar huecos (6):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.5" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.5">JXUwMDBh
+</span>      </td>
+			<td>      <label for="clozeBlank156_22.6" class="sr-av">Rellenar huecos (7):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.6" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.6">JXUwMDFk
+</span>      </td>
+			<td>      <label for="clozeBlank156_22.7" class="sr-av">Rellenar huecos (8):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.7" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.7">JXUwMDFm
+</span>      </td>
+			<td>      <label for="clozeBlank156_22.8" class="sr-av">Rellenar huecos (9):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.8" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.8">JXUwMDEx
+</span>      </td>
+			<td>      <label for="clozeBlank156_22.9" class="sr-av">Rellenar huecos (10):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.9" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.9">JXUwMDBi
+</span>      </td>
+			<td>      <label for="clozeBlank156_22.10" class="sr-av">Rellenar huecos (11):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.10" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.10">JXUwMDBj
+</span>      </td>
+			<td>      <label for="clozeBlank156_22.11" class="sr-av">Rellenar huecos (12):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.11" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.11">JXUwMDBh
+</span>      </td>
+			<td>      <label for="clozeBlank156_22.12" class="sr-av">Rellenar huecos (13):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.12" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.12">JXUwMDE3
+</span>      </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>      <label for="clozeBlank156_22.13" class="sr-av">Rellenar huecos (14):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.13" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.13">JXUwMDFk
+</span>      </td>
+			<td>      <label for="clozeBlank156_22.14" class="sr-av">Rellenar huecos (15):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.14" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.14">JXUwMDE5
+</span>      
+			</td>
+			<td> </td>
+			<td>      <label for="clozeBlank156_22.15" class="sr-av">Rellenar huecos (16):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.15" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.15">JXUwMDBi
+</span>      </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>      <label for="clozeBlank156_22.16" class="sr-av">Rellenar huecos (17):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.16" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.16">JXUwMDFh
+</span>      </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>      <label for="clozeBlank156_22.17" class="sr-av">Rellenar huecos (18):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.17" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.17">JXUwMDE0
+</span>      </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> 5.<br/>
+			</td>
+			<td>       <label for="clozeBlank156_22.18" class="sr-av">Rellenar huecos (19):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.18" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.18">JXUwMDFi
+</span>      </td>
+			<td>      <label for="clozeBlank156_22.19" class="sr-av">Rellenar huecos (20):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.19" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.19">JXUwMDE5
+</span>      
+			</td>
+			<td>       <label for="clozeBlank156_22.20" class="sr-av">Rellenar huecos (21):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.20" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.20">JXUwMDE1
+</span>      </td>
+			<td>       <label for="clozeBlank156_22.21" class="sr-av">Rellenar huecos (22):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.21" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.21">JXUwMDA4
+</span>      </td>
+			<td>      <label for="clozeBlank156_22.22" class="sr-av">Rellenar huecos (23):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank156_22.22" style="width:1ch" /><span style="display:none" id="clozeAnswer156_22.22">JXUwMDE3
+</span>      </td>
+		</tr>
+	</tbody>
+</table>
+<div class="block iDevice_buttons"><p><input class="button" type="submit" name="submit156_22" value="Enviar"  id="submit156_22" />
+<input type="button" name="restart156_22" value="Reiniciar" style="display:none" id="restart156_22" onclick="$exe.cloze.restart('156_22')" />
+ <input type="button" name="156_22showAnswersButton" value="Mostrar las respuestas" style="display:none" id="showAnswersButton156_22" onclick="$exe.cloze.fillInputs('156_22')" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span></p></div><div id="clozeScore156_22"></div></div></form></div></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper CasestudyIdevice em_iDevice em_iDevice_casestudy" id="id110">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Caso práctico</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta110_94" class="block iDevice_content">
+
+</div>
+<div id="taquesQuestion0b110" class="block iDevice_content">
+<p>En una empresa también se necesitan tablas distintas. <strong>¿Serías capaz de nombrar tres tablas para la empresa Publi-Service y nombrar, al menos tres campos de cada una?</strong></p>
+<p>Establece alguna relación entre ellas.</p>
+</div>
+<form name="feedback-form-quesFeedback0b110" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b110text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b110" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<div id="feedback-quesFeedback0b110" class="feedback js-feedback js-hidden">
+<h3 class="js-sr-av">Retroalimentación</h3>
+<div align="justify">En cualquier empresa de este tipo es necesario disponer de datos de clientes, de proveedores y de pedidos.</div>
+<p align="justify">Las tablas <span style="text-decoration: underline;">clientes y proveedores</span> pueden tener una estructura similar con los campos id, nombre_empresa, dirección, ciudad, ...</p>
+<p align="justify">La tabla <span style="text-decoration: underline;">pedidos</span> puede tener los campos id_pedido, fecha_pedido, fecha_envío, id_cliente, dirección, ...</p>
+<p align="justify">Esta claro que ambas tablas estarán relacionadas por el campo id_cliente, puesto que cada pedido debe recibirlo y ser cobrado a un cliente de los ya registrados en la empresa.</p>
+<div style="text-align: center;"><img src="tablas_1-2.png" alt="tablas" title="tablas" width="456" height="121" /></div>
+<p style="text-align: center;"><em><span style="font-size: 10pt;"> </span><span style="font-size: xx-small;"><span style="font-size: 10pt;">Tablas Clientes y Pedidos</span> </span></em></p></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice em_iDevice_saber" id="id104">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Para saber más</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta104_288_10" class="block iDevice_content">
+<div align="justify">En la definición de registro ha aparecido la palabra <b>tupla</b>. Es un término utilizado por Codd, creador del concepto de base de datos relacional. </div>
+<p></p>
+<div align="justify">Refresca tu memoria repasando este concepto en Wikipedia: <a href="http://es.wikipedia.org/wiki/Base_de_datos_relacional" target="_blank" rel="noopener">base_de_datos_relacional</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="23_entorno_de_trabajo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="31_creacin_de_tablas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

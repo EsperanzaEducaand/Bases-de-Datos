@@ -1,0 +1,573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2. Sistemas de gestión de bases de datos | Tecnología de la Información y la Comunicación: Bases de datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="IEDA, Ana Echarri" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-43"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Tecnología de la Información y la Comunicación: Bases de datos</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tecnologías de la Información y la Comuniación: Bases de datos</a></li>
+   <li><a href="1_bases_de_datos_definicin.html" class="daddy">1. Bases de datos. Definición</a>
+   <ul class="other-section">
+      <li><a href="11_diseo_de_bases_de_datos.html" class="no-ch">1.1. Diseño de Bases de datos</a></li>
+      <li><a href="12_elementos_de_diseo.html" class="no-ch">1.2. Elementos de diseño</a></li>
+      <li><a href="13_bases_de_datos_relacionales.html" class="no-ch">1.3. Bases de datos relacionales</a></li>
+      <li><a href="14_accesos_y_usuarios.html" class="no-ch">1.4. Accesos y usuarios</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="2_sistemas_de_gestin_de_bases_de_datos.html" class="active daddy">2. Sistemas de gestión de bases de datos</a>
+   <ul>
+      <li><a href="21_openofficeorg_base.html" class="no-ch">2.1. OpenOffice.org Base</a></li>
+      <li><a href="22_creacin_de_una_base_de_datos.html" class="no-ch">2.2. Creación de una base de datos</a></li>
+      <li><a href="23_entorno_de_trabajo.html" class="no-ch">2.3. Entorno de trabajo</a></li>
+   </ul>
+   </li>
+   <li><a href="3_tablas_y_relaciones.html" class="daddy">3. Tablas y Relaciones</a>
+   <ul class="other-section">
+      <li><a href="31_creacin_de_tablas.html" class="no-ch">3.1. Creación de tablas</a></li>
+      <li><a href="32_tipos_de_datos.html" class="no-ch">3.2. Tipos de datos</a></li>
+      <li><a href="33_edicin_de_tablas_y_registros.html" class="no-ch">3.3. Edición de tablas y registros</a></li>
+      <li><a href="34_operaciones_con_registros.html" class="no-ch">3.4. Operaciones con registros</a></li>
+      <li><a href="35_relaciones.html" class="no-ch">3.5. Relaciones</a></li>
+   </ul>
+   </li>
+   <li><a href="4_manipulacin_y_edicin_de_bases_de_datos.html" class="daddy">4.- Manipulación y edición de Bases de datos</a>
+   <ul class="other-section">
+      <li><a href="41_consultas.html" class="daddy">4.1. Consultas</a>
+      <ul class="other-section">
+         <li><a href="411_asistente.html" class="no-ch">4.1.1. Asistente</a></li>
+         <li><a href="412_vista_diseo.html" class="no-ch">4.1.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="42_formularios.html" class="daddy">4.2. Formularios</a>
+      <ul class="other-section">
+         <li><a href="421_asistente.html" class="no-ch">4.2.1. Asistente</a></li>
+         <li><a href="422_vista_diseo.html" class="no-ch">4.2.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="43_informes.html" class="daddy">4.3. Informes</a>
+      <ul class="other-section">
+         <li><a href="431_asistente.html" class="no-ch">4.3.1. Asistente</a></li>
+         <li><a href="432_edicin.html" class="no-ch">4.3.2. Edición</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="5_lengua_sql.html" class="daddy">5. Lengua SQL</a>
+   <ul class="other-section">
+      <li><a href="51_comandos_y_sintaxis.html" class="no-ch">5.1. Comandos y sintaxis</a></li>
+      <li><a href="52_clusulas_y_palabras_reservadas.html" class="no-ch">5.2. Cláusulas y palabras reservadas</a></li>
+      <li><a href="53_consultas_de_seleccin.html" class="no-ch">5.3. Consultas de selección</a></li>
+      <li><a href="54_consultas_de_accin.html" class="no-ch">5.4. Consultas de acción</a></li>
+   </ul>
+   </li>
+   <li><a href="resumen.html" class="no-ch">Resumen</a></li>
+   <li><a href="imprimible.html" class="no-ch">Imprimible</a></li>
+   <li><a href="aviso_legal.html" class="no-ch">Aviso Legal</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="14_accesos_y_usuarios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="21_openofficeorg_base.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">2. Sistemas de gestión de bases de datos</h1></div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id85">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Importante</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta85_290_7" class="block iDevice_content">
+<h5><span size="5" class=" EducaAnd_COM">SGBD</span></h5>
+<p>Un Sistema de Gestión de Base de Datos o <b>SGBD </b>(en inglés, DataBase Management System o DBMS) es un conjunto de herramientas de software que permite crear y mantener una base de datos.</p>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id97">
+<div class="iDevice emphasis0">
+<div id="ta97_1" class="block iDevice_content">
+<p>Ya sabes que la finalidad última del uso del ordenador es el tratamiento automático de la información, es decir, la manipulación de datos. De nada sirve disponer de un buen diseño de base de datos si no se establecen las herramientas para organizar y administrar, e incluso introducir, los datos. Cuanto mayor sean la seguridad y la facilidad con las que estas herramientas permitan a los usuarios actuar sobre la base de datos, más eficaz será dicha base.</p>
+<h5 class=" EducaAnd_COM">Funciones de un SGBD</h5>
+<table cellspacing="5" border="0">
+<tbody>
+<tr align="justify">
+<td><b> Control de acceso</b> y concurrencia de usuarios.- la función del SGBD es permitir o restringir el acceso a determinados usuarios y a determinados datos previamente establecidos por el administrador. Asimismo, debe controlar la prioridad de las transacciones cuando varios usuarios están actuando sobre un mismo registro.</td>
+</tr>
+<tr>
+<td align="justify"><b>Seguridad</b> de la información.- realización de copias de seguridad y recuperación de datos en caso de fallo del sistema.</td>
+</tr>
+<tr>
+<td align="justify"><b> Protección</b> de la estructura.- el SGBD debe proporcionar al usuario herramientas sencillas para la manipulación de los datos. Esto es, debe proporcionar un nivel de abstracción que permita al usuario interactuar sin necesidad de conocer la estructura interna de la base de datos.</td>
+</tr>
+<tr>
+<td align="justify"><b>Consistencia</b> de la información e integridad de los datos.- los principios básicos de una base de datos deben cumplirse en todo momento. El SGBD debe proporcionar herramientas para validar los datos introducidos y comprobar la redundancia, eliminándola si es posible.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper MultichoiceIdevice em_iDevice em_iDevice_question" id="id98">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div class="question">
+<form name="multi-choice-form-98_2" action="#" onsubmit="return false" class="activity-form">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion98_2" class="block question iDevice_content">
+<p>
+Señala la función que debe cumplir el SGBD en cada caso:
+</p>
+<p>
+a) Evitar que se introduzca texto en un campo de número de teléfono.
+</p>
+
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i98_38" class="sr-av"><a href="#answer-98_38">Opción 1</a></label><input type="radio" name="option98_2" id="i98_38" class="exe-radio-option exe-radio-option-0-2-98_2-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-98_38"><a name="answer-98_38"></a>
+<div id="taans98_38" class="block iDevice_content">
+Protección de la estructura<br />
+
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i98_41" class="sr-av"><a href="#answer-98_41">Opción 2</a></label><input type="radio" name="option98_2" id="i98_41" class="exe-radio-option exe-radio-option-1-2-98_2-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-98_41"><a name="answer-98_41"></a>
+<div id="taans98_41" class="block iDevice_content">
+Consistencia de los datos<br />
+
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_feedbacks js-feedback">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<div id="sa0b98_2" class="feedback js-hidden"><a name="sa0b98_2"></a>
+<div id="taf98_38" class=" iDevice_content">
+¡Incorrecto! Esta función hace referencia a los archivos de almacenamiento de datos.<br />
+
+</div>
+</div>
+<div id="sa1b98_2" class="feedback js-hidden"><a name="sa1b98_2"></a>
+<div id="taf98_41" class=" iDevice_content">
+¡Correcto! El SGBD debe proporcionar herramientas de validación de tipos de datos.
+
+</div>
+</div>
+</div>
+</form>
+<div class="iDevice_solution feedback js-hidden">
+<h4>Solución</h4>
+<ol>
+<li><a href="#answer-98_38">Incorrecto</a><span> (<a href="#sa0b98_2">Retroalimentación</a>)</span></li>
+<li><a href="#answer-98_41">Opción correcta</a><span> (<a href="#sa1b98_2">Retroalimentación</a>)</span></li>
+</ol>
+</div>
+</div>
+<div class="question">
+<form name="multi-choice-form-98_44" action="#" onsubmit="return false" class="activity-form">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion98_44" class="block question iDevice_content">
+b) Intento de modificación de datos protegidos.
+
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i98_47" class="sr-av"><a href="#answer-98_47">Opción 1</a></label><input type="radio" name="option98_44" id="i98_47" class="exe-radio-option exe-radio-option-0-2-98_44-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-98_47"><a name="answer-98_47"></a>
+<div id="taans98_47" class="block iDevice_content">
+Control de acceso
+
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i98_50" class="sr-av"><a href="#answer-98_50">Opción 2</a></label><input type="radio" name="option98_44" id="i98_50" class="exe-radio-option exe-radio-option-1-2-98_44-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-98_50"><a name="answer-98_50"></a>
+<div id="taans98_50" class="block iDevice_content">
+Seguridad de la información<br />
+
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_feedbacks js-feedback">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<div id="sa0b98_44" class="feedback js-hidden"><a name="sa0b98_44"></a>
+<div id="taf98_47" class=" iDevice_content">
+¡Correcto! El administrador otorga permisos y restringe el acceso a determinados datos como campos o atributos clave.<br />
+
+</div>
+</div>
+<div id="sa1b98_44" class="feedback js-hidden"><a name="sa1b98_44"></a>
+<div id="taf98_50" class=" iDevice_content">
+¡Incorrecto! Esta función hace referencia a la realización de copias de seguridad.<br />
+
+</div>
+</div>
+</div>
+</form>
+<div class="iDevice_solution feedback js-hidden">
+<h4>Solución</h4>
+<ol>
+<li><a href="#answer-98_47">Opción correcta</a><span> (<a href="#sa0b98_44">Retroalimentación</a>)</span></li>
+<li><a href="#answer-98_50">Incorrecto</a><span> (<a href="#sa1b98_44">Retroalimentación</a>)</span></li>
+</ol>
+</div>
+</div>
+<div class="question">
+<form name="multi-choice-form-98_53" action="#" onsubmit="return false" class="activity-form">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion98_53" class="block question iDevice_content">
+c) Borrar un archivo de almacenamiento de datos.
+
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i98_56" class="sr-av"><a href="#answer-98_56">Opción 1</a></label><input type="radio" name="option98_53" id="i98_56" class="exe-radio-option exe-radio-option-0-2-98_53-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-98_56"><a name="answer-98_56"></a>
+<div id="taans98_56" class="block iDevice_content">
+Seguridad de la información
+
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i98_59" class="sr-av"><a href="#answer-98_59">Opción 2</a></label><input type="radio" name="option98_53" id="i98_59" class="exe-radio-option exe-radio-option-1-2-98_53-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-98_59"><a name="answer-98_59"></a>
+<div id="taans98_59" class="block iDevice_content">
+Protección de la estructura
+
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_feedbacks js-feedback">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<div id="sa0b98_53" class="feedback js-hidden"><a name="sa0b98_53"></a>
+<div id="taf98_56" class=" iDevice_content">
+¡Incorrecto! Esta función hace referencia a la realización de copias de seguridad.<br />
+
+</div>
+</div>
+<div id="sa1b98_53" class="feedback js-hidden"><a name="sa1b98_53"></a>
+<div id="taf98_59" class=" iDevice_content">
+¡Correcto! Los ficheros de almacenamiento no deben estar disponibles para el usuario.
+
+</div>
+</div>
+</div>
+</form>
+<div class="iDevice_solution feedback js-hidden">
+<h4>Solución</h4>
+<ol>
+<li><a href="#answer-98_56">Incorrecto</a><span> (<a href="#sa0b98_53">Retroalimentación</a>)</span></li>
+<li><a href="#answer-98_59">Opción correcta</a><span> (<a href="#sa1b98_53">Retroalimentación</a>)</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id100">
+<div class="iDevice emphasis0">
+<div id="ta100_1" class="block iDevice_content">
+<p>La clasificación de los SGBD se hace en función de diferentes criterios.</p>
+<p>El criterio más extendido es según el modelo de base de datos, jerárquico, de red, relacional y orientado a objetos. Aunque hay otros criterios:</p>
+<div style="text-align: center;"><img src="sgbd.png" alt="clasificación SGBD" title="clasificación SGBD" width="632" height="393" /></div>
+<p style="text-align: center;"><em><span style="font-size: 10pt;"> Clasificación de los SGBD<br /></span></em><span style="font-size: 8pt;">Imagen de elaboración propia</span></p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper readingIdevice em_iDevice em_iDevice_reading" id="id101">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Actividad de Lectura</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta101_22_4" class="block iDevice_content">
+<div align="justify">Independientemente del tipo, los SGBD son programas informáticos y, por tanto, pueden ser de software libre o de propietario.</div>
+<p>Para conocer los principales programas y sus páginas web puedes consultar la clasificación de <a href="http://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_bases_de_datos" target="_blank" rel="noopener">wikipedia</a>.</p>
+</div>
+<div id="ta101_22_5" class="block iDevice_content">
+<p>Comprueba que los más utilizados son los siguientes y busca una característica de cada uno de ellos:</p>
+<p></p>
+<table style="height: 290px; width: 96.1169%;" width="100%" height="290" cellspacing="5" border="0">
+<tbody>
+<tr>
+<td style="width: 47.9537%;">
+<ul>
+<li><strong>Software libre:</strong> MySQL, PostgreSQL, Apache Derby<span style="background-color: #ffff00;"></span>, Openoffice.org Base.</li>
+</ul>
+</td>
+<td style="width: 32.082%;" align="center">
+<p><img src="logo-mysql-110x57.png" alt="MySQL" title="MySQL" width="110" height="57" /></p>
+<p><span style="font-size: xx-small;">Logo <a href="http://www.mysql.com/" target="_blank" rel="noopener">MySQL</a> </span><span style="font-size: xx-small;"><span dir="ltr"></span></span></p>
+</td>
+<td style="width: 18.0036%;">
+<div style="text-align: center;"></div>
+<div style="text-align: center;"><img src="hdr_left.png" alt="Postgre SQL" title="Postgre SQL" width="164" height="57" /></div>
+<div style="text-align: center;"><span style="font-size: xx-small;">Logo <a href="http://www.postgresql.org/" target="_blank" rel="noopener">PostgreSQL</a></span></div>
+</td>
+</tr>
+<tr>
+<td style="width: 47.9537%;">
+<ul>
+<li><strong>Software de propietario:</strong> dBase, DB2, Oracle, Microsoft SQL Server, Microsoft Access.</li>
+</ul>
+</td>
+<td style="width: 32.082%;">
+<p align="center"> <img src="ora_logo_small.gif" alt="ORACLE" title="ORACLE" width="133" height="18" /><br /><span style="font-size: xx-small;"></span></p>
+<p align="center"><span style="font-size: xx-small;">Logo <a href="http://www.oracle.com/index.html" target="_blank" rel="noopener">Oracle</a></span><span style="font-size: xx-small;"></span>
+<script language="javascript" type="text/javascript"> <!--
+			var divContent = new Array();
+			divContent[0] = "<a href=\"/click.php?e=35209\"><img src=\"/common/themes/sakila/banners/b12-enterprise-monitor-fall09.en.png\" alt=\"Improved MySQL Query Analyzer - Visually Correlate System Performance with Query Activity!\" width=\"640\" height=\"220\"   /></a>";
+			divContent[1] = "<a href=\"/click.php?e=35169\"><img src=\"/common/themes/sakila/banners/b12-mysql-51-blue.en.jpg\" alt=\"MySQL 5.1 - Get the Guide\" width=\"640\" height=\"220\"   /></a>";
+			divContent[2] = "<a href=\"/click.php?e=35229\"><img src=\"/common/themes/sakila/banners/b12-symantec-rock-solid.en.jpg\" alt=\"Symantec Benefits from MySQL Embedded Server's Rock-Solid Quality and Low Administrative Costs For Over Six Years\" width=\"640\" height=\"220\"   /></a>";
+			divContent[3] = "<a href=\"/click.php?e=35153\"><img src=\"/common/themes/sakila/banners/b12-mysql-cluster7.en.jpg\" alt=\"MySQL Cluster 7.0 - Get the Guide\" width=\"640\" height=\"220\"   /></a>";
+			divContent[4] = "<a href=\"/click.php?e=35250\"><img src=\"/common/themes/sakila/banners/b12-mysql-conference-save.en.jpg\" alt=\"Information Unleashed: MySQL Conference and Expo 2010 - April 12-15, 2010 Santa Clara, CA\" width=\"640\" height=\"220\"   /></a>";
+			var imageRotateInterval = setInterval("rotateDiv('fp_banners', false)",14000);
+			var divRotateCurrentKey = 3;
+			//-->
+			</script>
+<script src="http://s7.addthis.com/js/250/addthis_widget.js" type="text/javascript">
+			</script>
+</p>
+</td>
+<td style="width: 18.0036%;">
+<div style="text-align: center;"><img src="header_right1.jpg" alt="SQL Server" title="SQL Server" width="133" height="32" /></div>
+<p align="center"><span style="font-size: xx-small;">Logo <a href="http://www.microsoft.com/uk/sql/default.mspx" target="_blank" rel="noopener">SQL Server</a></span><span style="font-size: xx-small;"><span dir="ltr"></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<form name="feedback-form-101_22_6" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedback101_22_6text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-101_22_6" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<div id="feedback-101_22_6" class="feedback js-feedback js-hidden">
+<h3 class="js-sr-av">Retroalimentación</h3>
+<div align="justify">Además de las condiciones de uso del software, podríamos señalar las siguientes características:</div>
+<ul>
+<li>MySQL es muy utilizado en aplicaciones web.</li>
+<li>PostgreSQL es relacional orientado a objetos.</li>
+<li>Apache Derby está escrito en lenguaje Java.</li>
+<li>Openoffice.org Base es el componente de la suite Openoffice.org para aplicaciones estándar y relativamente pequeñas.</li>
+</ul>
+<p></p>
+<ul>
+<li>dBase fue el primer sistema utilizado, compatible con Macintosh. Actualmente no se usa.</li>
+<li>DB2 es propiedad de la empresa IBM.</li>
+<li>Oracle es uno de los sistemas más potentes y más extendidos. Ha sido considerado durante mucho tiempo el más completo.</li>
+<li>Microsoft SQL Server es el equivalente de software de propietario a MySQL. Dispone de una versión Express Edition gratuita.</li>
+<li>Microsoft Access es el componente de la suite Microsoft Office, es decir, el equivalente a Openoffice.org Base.</li>
+</ul></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper ClozeIdevice em_iDevice em_iDevice_question" id="id102">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta102_21" class="block instructions iDevice_content">
+<p>
+Completa el siguiente crucigrama.
+</p>
+<p>
+1. SBGD de Microsoft para aplicaciones estándar.
+</p>
+<p>
+2. Primer SGBD usado.
+</p>
+<p>
+3. SGBD más completo.
+</p>
+<p>
+4. SGBD utilizado en aplicaciones web.  
+</p>
+
+</div>
+
+    <div class="activity" id="activity-102_22"><form name="cloze-form-102_22" action="#" class="activity-form cloze-activity-form"><div id="cloze102_22"><input type="hidden" name="clozeFlag102_22.strictMarking" id="clozeFlag102_22.strictMarking" value="false"/>
+<input type="hidden" name="clozeFlag102_22.checkCaps" id="clozeFlag102_22.checkCaps" value="false"/>
+<input type="hidden" name="clozeFlag102_22.instantMarking" id="clozeFlag102_22.instantMarking" value="false"/>
+<table border="0" cellspacing="3">
+	<tbody>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> 1<br/>
+			</td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> 2<br/>
+			</td>
+			<td>   <label for="clozeBlank102_22.0" class="sr-av">Rellenar huecos (1):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.0" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.0">JXUwMDFj
+</span>  </td>
+			<td>   <label for="clozeBlank102_22.1" class="sr-av">Rellenar huecos (2):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.1" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.1">JXUwMDFh
+</span>  </td>
+			<td>   <label for="clozeBlank102_22.2" class="sr-av">Rellenar huecos (3):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.2" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.2">JXUwMDE5
+</span>  </td>
+			<td>   <label for="clozeBlank102_22.3" class="sr-av">Rellenar huecos (4):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.3" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.3">JXUwMDBi
+</span>  </td>
+			<td>   <label for="clozeBlank102_22.4" class="sr-av">Rellenar huecos (5):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.4" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.4">JXUwMDFk
+</span>  </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>   <label for="clozeBlank102_22.5" class="sr-av">Rellenar huecos (6):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.5" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.5">JXUwMDFi
+</span>  <br/>
+			</td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> 3<br/>
+			</td>
+			<td>   <label for="clozeBlank102_22.6" class="sr-av">Rellenar huecos (7):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.6" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.6">JXUwMDE3
+</span>  </td>
+			<td>   <label for="clozeBlank102_22.7" class="sr-av">Rellenar huecos (8):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.7" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.7">JXUwMDBh
+</span>  </td>
+			<td>   <label for="clozeBlank102_22.8" class="sr-av">Rellenar huecos (9):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.8" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.8">JXUwMDE5
+</span>  </td>
+			<td>   <label for="clozeBlank102_22.9" class="sr-av">Rellenar huecos (10):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.9" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.9">JXUwMDFi
+</span>  </td>
+			<td>   <label for="clozeBlank102_22.10" class="sr-av">Rellenar huecos (11):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.10" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.10">JXUwMDE0
+</span>  </td>
+			<td>   <label for="clozeBlank102_22.11" class="sr-av">Rellenar huecos (12):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.11" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.11">JXUwMDFk
+</span>  </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>   <label for="clozeBlank102_22.12" class="sr-av">Rellenar huecos (13):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.12" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.12">JXUwMDFk
+</span>  </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>   <label for="clozeBlank102_22.13" class="sr-av">Rellenar huecos (14):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.13" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.13">JXUwMDBi
+</span>  </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> 4<br/>
+			</td>
+			<td>   <label for="clozeBlank102_22.14" class="sr-av">Rellenar huecos (15):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.14" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.14">JXUwMDE1
+</span>  </td>
+			<td>   <label for="clozeBlank102_22.15" class="sr-av">Rellenar huecos (16):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.15" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.15">JXUwMDAx
+</span>  </td>
+			<td>   <label for="clozeBlank102_22.16" class="sr-av">Rellenar huecos (17):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.16" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.16">JXUwMDBi
+</span>  </td>
+			<td>   <label for="clozeBlank102_22.17" class="sr-av">Rellenar huecos (18):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.17" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.17">JXUwMDA5
+</span>  </td>
+			<td>   <label for="clozeBlank102_22.18" class="sr-av">Rellenar huecos (19):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank102_22.18" style="width:1ch" /><span style="display:none" id="clozeAnswer102_22.18">JXUwMDE0
+</span>  </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</tbody>
+</table>
+<div class="block iDevice_buttons"><p><input class="button" type="submit" name="submit102_22" value="Enviar"  id="submit102_22" />
+<input type="button" name="restart102_22" value="Reiniciar" style="display:none" id="restart102_22" onclick="$exe.cloze.restart('102_22')" />
+ <input type="button" name="102_22showAnswersButton" value="Mostrar las respuestas" style="display:none" id="showAnswersButton102_22" onclick="$exe.cloze.fillInputs('102_22')" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span></p></div><div id="clozeScore102_22"></div></div></form></div></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice em_iDevice_saber" id="id86">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Para saber más</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta86_285_10" class="block iDevice_content">
+<p>El uso de internet supone la disponibilidad de la información y el acceso desde diversos puntos y por múltiples usuarios. Este hecho da lugar a un tipo de bases de datos denominadas bases de datos distribuidas.</p>
+<p>Para ampliar tus conocimientos puedes visitar, por ejemplo, wikipedia: <a href="http://es.wikipedia.org/wiki/Bases_de_datos_distribuidas" target="_blank" rel="noopener">bases_de_datos_distribuidas</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="14_accesos_y_usuarios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="21_openofficeorg_base.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
