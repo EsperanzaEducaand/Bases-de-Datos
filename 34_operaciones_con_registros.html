@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.4. Operaciones con registros | Tecnología de la Información y la Comunicación: Bases de datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="IEDA, Ana Echarri" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-51"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Tecnología de la Información y la Comunicación: Bases de datos</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tecnologías de la Información y la Comuniación: Bases de datos</a></li>
+   <li><a href="1_bases_de_datos_definicin.html" class="daddy">1. Bases de datos. Definición</a>
+   <ul class="other-section">
+      <li><a href="11_diseo_de_bases_de_datos.html" class="no-ch">1.1. Diseño de Bases de datos</a></li>
+      <li><a href="12_elementos_de_diseo.html" class="no-ch">1.2. Elementos de diseño</a></li>
+      <li><a href="13_bases_de_datos_relacionales.html" class="no-ch">1.3. Bases de datos relacionales</a></li>
+      <li><a href="14_accesos_y_usuarios.html" class="no-ch">1.4. Accesos y usuarios</a></li>
+   </ul>
+   </li>
+   <li><a href="2_sistemas_de_gestin_de_bases_de_datos.html" class="daddy">2. Sistemas de gestión de bases de datos</a>
+   <ul class="other-section">
+      <li><a href="21_openofficeorg_base.html" class="no-ch">2.1. OpenOffice.org Base</a></li>
+      <li><a href="22_creacin_de_una_base_de_datos.html" class="no-ch">2.2. Creación de una base de datos</a></li>
+      <li><a href="23_entorno_de_trabajo.html" class="no-ch">2.3. Entorno de trabajo</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="3_tablas_y_relaciones.html" class="current-page-parent daddy">3. Tablas y Relaciones</a>
+   <ul>
+      <li><a href="31_creacin_de_tablas.html" class="no-ch">3.1. Creación de tablas</a></li>
+      <li><a href="32_tipos_de_datos.html" class="no-ch">3.2. Tipos de datos</a></li>
+      <li><a href="33_edicin_de_tablas_y_registros.html" class="no-ch">3.3. Edición de tablas y registros</a></li>
+      <li id="active"><a href="34_operaciones_con_registros.html" class="active no-ch">3.4. Operaciones con registros</a></li>
+      <li><a href="35_relaciones.html" class="no-ch">3.5. Relaciones</a></li>
+   </ul>
+   </li>
+   <li><a href="4_manipulacin_y_edicin_de_bases_de_datos.html" class="daddy">4.- Manipulación y edición de Bases de datos</a>
+   <ul class="other-section">
+      <li><a href="41_consultas.html" class="daddy">4.1. Consultas</a>
+      <ul class="other-section">
+         <li><a href="411_asistente.html" class="no-ch">4.1.1. Asistente</a></li>
+         <li><a href="412_vista_diseo.html" class="no-ch">4.1.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="42_formularios.html" class="daddy">4.2. Formularios</a>
+      <ul class="other-section">
+         <li><a href="421_asistente.html" class="no-ch">4.2.1. Asistente</a></li>
+         <li><a href="422_vista_diseo.html" class="no-ch">4.2.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="43_informes.html" class="daddy">4.3. Informes</a>
+      <ul class="other-section">
+         <li><a href="431_asistente.html" class="no-ch">4.3.1. Asistente</a></li>
+         <li><a href="432_edicin.html" class="no-ch">4.3.2. Edición</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="5_lengua_sql.html" class="daddy">5. Lengua SQL</a>
+   <ul class="other-section">
+      <li><a href="51_comandos_y_sintaxis.html" class="no-ch">5.1. Comandos y sintaxis</a></li>
+      <li><a href="52_clusulas_y_palabras_reservadas.html" class="no-ch">5.2. Cláusulas y palabras reservadas</a></li>
+      <li><a href="53_consultas_de_seleccin.html" class="no-ch">5.3. Consultas de selección</a></li>
+      <li><a href="54_consultas_de_accin.html" class="no-ch">5.4. Consultas de acción</a></li>
+   </ul>
+   </li>
+   <li><a href="resumen.html" class="no-ch">Resumen</a></li>
+   <li><a href="imprimible.html" class="no-ch">Imprimible</a></li>
+   <li><a href="aviso_legal.html" class="no-ch">Aviso Legal</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="33_edicin_de_tablas_y_registros.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="35_relaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">3.4. Operaciones con registros</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id129">
+<div class="iDevice emphasis0">
+<div id="ta129_1" class="block iDevice_content">
+<div align="justify"></div>
+<div align="justify">Cuando una tabla contiene un número de registros fácilmente manejable (todos los registros se pueden visualizar en una o dos pantallas), consultar un dato u ordenar la tabla es una tarea asequible.</div>
+<p></p>
+<div align="justify">Sin embargo, la mayoría de las tablas tienen una extensión mucho mayor por lo que es necesario disponer de herramientas de tratamiento de registros para <strong>navegar, ordenar y filtrar por campos.</strong></div>
+<h5 align="justify"><span class=" EducaAnd_COM" align="justify">Barra de navegación</span></h5>
+<p align="justify"> Esta barra aparece en la parte inferior de la pantalla de edición de datos y ofrece la información sobre el registro activo y las herramientas para situarse en los distintos registros.</p>
+<p style="text-align: center;"> <img src="barra_registros.png" alt="barra de navegación" title="barra de navegación" width="380" height="22" /></p>
+<div style="text-align: center;"><em><span style="font-size: 10pt;">Barra de navegación de registros</span></em></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper ReflectionIdevice em_iDevice em_iDevice_reflection" id="id130">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Reflexiona</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta130_8" class="block iDevice_content">
+<div align="justify">Los botones ir al siguiente o al anterior e ir al primero o al último ya los has usado en OOo Calc para moverte entre las distintas hojas de cálculo.</div>
+<div align="justify"></div>
+<div align="justify">El botón con un asterisco tiene una función concreta, ¿cuál es?.</div>
+</div>
+<form name="feedback-form-130_9" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedback130_9text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-130_9" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<div id="feedback-130_9" class="feedback js-feedback js-hidden">
+<h3 class="js-sr-av">Retroalimentación</h3>
+<p>Seguro que has acertado, este botón crea un nuevo registro. Por tanto, sitúa el cursor después del último registro.</p></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id137">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Importante</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta137_294_7" class="block iDevice_content">
+<div align="justify"><b>Ordenar los registros</b> de una tabla consiste en alterar el orden de inserción de éstos para mostrarlos en pantalla ordenados por el campo o campos seleccionados ascendente o descendentemente.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id133">
+<div class="iDevice emphasis0">
+<div id="ta133_1" class="block iDevice_content">
+<h5 align="justify"><span class=" EducaAnd_COM" align="justify">Ordenación de registros</span></h5>
+<div align="justify">Esta operación no altera los datos del resto de campos o columnas, sólo afecta a la visualización de las filas en la pantalla.</div>
+<p>La barra de ordenación de registro ofrece tres posibilidades:</p>
+<table cellspacing="5" border="0">
+<tbody>
+<tr>
+<td rowspan="2" style="border: 1px solid #ffffff;">
+<ul>
+<li>Ordenación predeterminada según varios campos.</li>
+<li>Ordenación ascendente según el campo seleccionado.</li>
+<li>Ordenación descendente según el campo seleccionado.</li>
+</ul>
+</td>
+<td style="border: 1px solid #ffffff;">
+<div style="text-align: center;"><img src="ordenar.png" alt="barra ordenar" title="barra ordenar" width="120" height="44" /></div>
+<div style="text-align: center;"><em><span style="font-size: 10pt;">Ordenar registros</span></em></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper CasestudyIdevice em_iDevice em_iDevice_casestudy" id="id111">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Caso práctico</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta111_94" class="block iDevice_content">
+
+</div>
+<div id="taquesQuestion0b111" class="block iDevice_content">
+<div align="justify">Introduce los siguientes registros en la tabla Pedidos que has creado anteriormente para Publi-Servi y ordénalos de tres formas distintas:</div>
+<div align="justify"></div>
+<ol>
+<li>Según el campo CiudadDestinatario, por orden ascendente.</li>
+<li>Según el campo FechaEnvío, por orden descendente.</li>
+<li>Combinando ambas opciones: primero por ciudad y después por fecha de envío, por orden ascendente en ambos casos.</li>
+</ol>
+<div style="text-align: center;"><img src="tabla_pedidos.png" alt="tabla pedidos" title="tabla pedidos" width="631" height="83" /></div>
+<div style="text-align: center;"><span style="font-size: xx-small;">Tabla Pedidos</span></div>
+</div>
+<form name="feedback-form-quesFeedback0b111" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b111text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b111" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<div id="feedback-quesFeedback0b111" class="feedback js-feedback js-hidden">
+<h3 class="js-sr-av">Retroalimentación</h3>
+<ol></ol>
+<div align="justify">Comprueba el resultado en estas imágenes:</div>
+<div align="justify"></div>
+<p>1)</p>
+<div style="text-align: center;"><img src="orden_asc.png" alt="orden ascendente" title="orden ascendente" width="622" height="95" /></div>
+<p align="center"><em><span style="font-size: 10pt;">Tabla Pedidos ordenada por CiudadDestinatario</span></em></p>
+<p align="left"></p>
+<p>2)</p>
+<div style="text-align: center;"><img src="orden_desc.png" alt="orden descendente" title="orden descendente" width="629" height="81" /></div>
+<div align="center"><em><span style="font-size: 10pt;">Tabla Pedidos ordenada por FechaEnvío descendentemente</span></em></div>
+<p>3)</p>
+<div style="text-align: center;"><img src="orden_combi.png" alt="orden combinado" title="orden combinado" width="630" height="83" /></div>
+<div align="center"><em><span style="font-size: 10pt;">Tabla Pedidos ordenada por ciudades y fechas de envío</span></em></div></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice em_iDevice_saber" id="id127">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Para saber más</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta127_291_10" class="block iDevice_content">
+<div align="justify">¿Cuál es el número máximo de campos por los que se puede ordenar una tabla?</div>
+<p align="justify">La respuesta está en el menú: la ordenación de registros admite hasta tres campos.</p>
+<div style="text-align: center;"><img src="orden_tres.png" alt="menú ordenar" title="menú ordenar" width="378" height="120" /></div>
+<div style="text-align: center;"><em><span style="font-size: 10pt;">Orden de registros</span></em></div>
+<div style="text-align: center;"><span style="font-size: 8pt;">Imagen de elaboración propia</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id108">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Importante</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta108_293_7" class="block iDevice_content">
+<p><b>Filtrar los registros</b> de una tabla consiste en mostrar solamente aquellos registros que cumplen unas condiciones previamente establecidas.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id138">
+<div class="iDevice emphasis0">
+<div id="ta138_1" class="block iDevice_content">
+<h5 align="justify"><span class=" EducaAnd_COM" align="justify">Filtrado de registros</span></h5>
+<div align="justify">El filtrado de registros tampoco afecta a la estructura ni al contenido de la tabla, simplemente es una consulta rápida en pantalla.</div>
+<div align="justify"></div>
+<div align="justify">La barra de filtrado permite cuatro opciones:</div>
+<div align="justify"></div>
+<div align="justify">
+<table cellspacing="5" border="0">
+<tbody>
+<tr>
+<td style="border: 1px solid #ffffff;">
+<div align="justify">
+<ul>
+<li>Autofiltro.- toma como criterio de filtrado el valor del campo seleccionado automáticamente.</li>
+<li>Usar filtro actual o mostrar la tabla sin filtrar.</li>
+<li>Filtro estándar.- establecer los criterios de filtrado y los campos a los que se aplicarán.</li>
+<li>Eliminar filtro actual.</li>
+</ul>
+</div>
+</td>
+<td style="border: 1px solid #ffffff;">
+<p> </p>
+<div style="text-align: center;"><span style="font-size: 10pt;"><img src="filtrar.png" alt="barra filtrado" title="barra filtrado" width="115" height="30" /></span><br /><br /><em><span style="font-size: 10pt;">Filtrar registros</span></em><span style="font-size: xx-small;"></span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div align="justify"></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper CasestudyIdevice em_iDevice em_iDevice_casestudy" id="id150">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Caso práctico</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta150_94" class="block iDevice_content">
+
+</div>
+<div id="taquesQuestion0b150" class="block iDevice_content">
+<div align="justify">Ahora vamos a practicar el filtrado. Aplica los siguientes filtros a la tabla <strong>Pedidos</strong>:</div>
+<div align="justify"></div>
+<ol>
+<li>Coloca el cursor en el registro cuya ciudad es 'madrid' y aplica un autofiltro.</li>
+<li>Desactiva el filtro y vuelve a la vista inicial.</li>
+<li>Aplica un filtro al campo 'fecha de pedido' para averiguar los pedidos que se realizaron después del 22/01/10.</li>
+</ol>
+</div>
+<form name="feedback-form-quesFeedback0b150" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b150text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b150" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<div id="feedback-quesFeedback0b150" class="feedback js-feedback js-hidden">
+<h3 class="js-sr-av">Retroalimentación</h3>
+<div align="justify">El resultado de aplicar los dos filtros es el siguiente:</div>
+<p>1)</p>
+<div style="text-align: center;"><img src="fitro_auto.png" alt="autofiltro" title="autofiltro" width="623" height="56" /></div>
+<div align="center"><em><span style="font-size: 10pt;">Autofiltro</span></em></div>
+<p>2)</p>
+<div style="text-align: center;"><img src="filtro_fecha_igual.png" alt="filtro fecha" title="filtro fecha" width="630" height="65" /></div>
+<div align="center"><em><span style="font-size: 10pt;">Filtro en FechaPedido posterior a 22/01/10</span></em></div></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="33_edicin_de_tablas_y_registros.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="35_relaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

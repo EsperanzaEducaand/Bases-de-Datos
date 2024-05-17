@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.3. Consultas de selección | Tecnología de la Información y la Comunicación: Bases de datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="IEDA, Ana Echarri" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-66"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Tecnología de la Información y la Comunicación: Bases de datos</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tecnologías de la Información y la Comuniación: Bases de datos</a></li>
+   <li><a href="1_bases_de_datos_definicin.html" class="daddy">1. Bases de datos. Definición</a>
+   <ul class="other-section">
+      <li><a href="11_diseo_de_bases_de_datos.html" class="no-ch">1.1. Diseño de Bases de datos</a></li>
+      <li><a href="12_elementos_de_diseo.html" class="no-ch">1.2. Elementos de diseño</a></li>
+      <li><a href="13_bases_de_datos_relacionales.html" class="no-ch">1.3. Bases de datos relacionales</a></li>
+      <li><a href="14_accesos_y_usuarios.html" class="no-ch">1.4. Accesos y usuarios</a></li>
+   </ul>
+   </li>
+   <li><a href="2_sistemas_de_gestin_de_bases_de_datos.html" class="daddy">2. Sistemas de gestión de bases de datos</a>
+   <ul class="other-section">
+      <li><a href="21_openofficeorg_base.html" class="no-ch">2.1. OpenOffice.org Base</a></li>
+      <li><a href="22_creacin_de_una_base_de_datos.html" class="no-ch">2.2. Creación de una base de datos</a></li>
+      <li><a href="23_entorno_de_trabajo.html" class="no-ch">2.3. Entorno de trabajo</a></li>
+   </ul>
+   </li>
+   <li><a href="3_tablas_y_relaciones.html" class="daddy">3. Tablas y Relaciones</a>
+   <ul class="other-section">
+      <li><a href="31_creacin_de_tablas.html" class="no-ch">3.1. Creación de tablas</a></li>
+      <li><a href="32_tipos_de_datos.html" class="no-ch">3.2. Tipos de datos</a></li>
+      <li><a href="33_edicin_de_tablas_y_registros.html" class="no-ch">3.3. Edición de tablas y registros</a></li>
+      <li><a href="34_operaciones_con_registros.html" class="no-ch">3.4. Operaciones con registros</a></li>
+      <li><a href="35_relaciones.html" class="no-ch">3.5. Relaciones</a></li>
+   </ul>
+   </li>
+   <li><a href="4_manipulacin_y_edicin_de_bases_de_datos.html" class="daddy">4.- Manipulación y edición de Bases de datos</a>
+   <ul class="other-section">
+      <li><a href="41_consultas.html" class="daddy">4.1. Consultas</a>
+      <ul class="other-section">
+         <li><a href="411_asistente.html" class="no-ch">4.1.1. Asistente</a></li>
+         <li><a href="412_vista_diseo.html" class="no-ch">4.1.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="42_formularios.html" class="daddy">4.2. Formularios</a>
+      <ul class="other-section">
+         <li><a href="421_asistente.html" class="no-ch">4.2.1. Asistente</a></li>
+         <li><a href="422_vista_diseo.html" class="no-ch">4.2.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="43_informes.html" class="daddy">4.3. Informes</a>
+      <ul class="other-section">
+         <li><a href="431_asistente.html" class="no-ch">4.3.1. Asistente</a></li>
+         <li><a href="432_edicin.html" class="no-ch">4.3.2. Edición</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="5_lengua_sql.html" class="current-page-parent daddy">5. Lengua SQL</a>
+   <ul>
+      <li><a href="51_comandos_y_sintaxis.html" class="no-ch">5.1. Comandos y sintaxis</a></li>
+      <li><a href="52_clusulas_y_palabras_reservadas.html" class="no-ch">5.2. Cláusulas y palabras reservadas</a></li>
+      <li id="active"><a href="53_consultas_de_seleccin.html" class="active no-ch">5.3. Consultas de selección</a></li>
+      <li><a href="54_consultas_de_accin.html" class="no-ch">5.4. Consultas de acción</a></li>
+   </ul>
+   </li>
+   <li><a href="resumen.html" class="no-ch">Resumen</a></li>
+   <li><a href="imprimible.html" class="no-ch">Imprimible</a></li>
+   <li><a href="aviso_legal.html" class="no-ch">Aviso Legal</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="52_clusulas_y_palabras_reservadas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="54_consultas_de_accin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">5.3. Consultas de selección</h1></div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id210">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Importante</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta210_297_7" class="block iDevice_content">
+<div align="justify">Las <b>consultas de selección</b> permiten indicar a la base de datos los campos (atributos), las tablas (relaciones) y condiciones de los registros que se quieren visualizar.</div>
+<div align="justify"></div>
+<div align="justify">Su estructura es:</div>
+<div align="justify">
+<table style="height: 18px; width: 40%; margin-left: auto; margin-right: auto;" class="EducaAnd_bordeCOM" cellspacing="5" cellpadding="10" border="1" align="center">
+<tbody>
+<tr style="height: 18px;">
+<td style="height: 18px; text-align: center;"><b>SELECT ... FROM ... WHERE ...</b> </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id226">
+<div class="iDevice emphasis0">
+<div id="ta226_1" class="block iDevice_content">
+<p align="justify">La palabra consulta lleva implícito en su significado un elemento interrogativo, es decir, <strong>una consulta es una pregunta.</strong></p>
+<p align="justify">Los argumentos de dicha pregunta están formados por un sujeto y un predicado que determina la acción a realizar mediante un verbo. El verbo que se utiliza en las consultas más sencillas es seleccionar. Estas son las consultas de selección.</p>
+<p style="text-align: center;">La expresión SELECT ... FROM ... WHERE ... equivale a la consulta "selecciona los registros ... de la tabla ... que cumplan...".</p>
+<p>Esta es la estructura básica, pero se pueden utilizar elementos simplificadores y operadores para especificar las condiciones.</p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper ClozeIdevice em_iDevice em_iDevice_question" id="id227">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta227_21" class="block instructions iDevice_content">
+<div align="justify">Vamos a seguir trabajando con la tabla Pedidos de nuestra base de datos Publi-Service. Recuerda que se usa para introducir todos los datos de un pedido desde su identificación en el campo IDPedido (campo llave primaria numérico) hasta la ciudad de destino en el campo CiudadDestinatario.</div>
+<p>Señala cuál de las opciones que se presentan puede escribirse en cada apartado de la consulta.</p>
+</div>
+
+    <div class="activity" id="activity-227_22"><form name="cloze-form-227_22" action="#" class="activity-form cloze-activity-form"><div id="cloze227_22"><input type="hidden" name="clozeFlag227_22.strictMarking" id="clozeFlag227_22.strictMarking" value="true"/>
+<input type="hidden" name="clozeFlag227_22.checkCaps" id="clozeFlag227_22.checkCaps" value="false"/>
+<input type="hidden" name="clozeFlag227_22.instantMarking" id="clozeFlag227_22.instantMarking" value="false"/>
+<input type="hidden" name="clozeVar227_22.feedbackId" id="clozeVar227_22.feedbackId" value="ta227_23"/>
+<table border="0" cellspacing="5">
+	<tbody>
+		<tr>
+			<td style="background-color: #ccccff">SELECT </td>
+			<td>
+			<div align="center">
+			</div>
+			<div align="left">
+			<div align="center">
+			  <label for="clozeBlank227_22.0" class="sr-av">Rellenar huecos (1):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank227_22.0" style="width:1ch" /><span style="display:none" id="clozeAnswer227_22.0">JXUwMDM5
+</span>        
+			</div>
+			</div>
+			</td>
+			<td style="background-color: #ccccff">FROM </td>
+			<td>              <label for="clozeBlank227_22.1" class="sr-av">Rellenar huecos (2):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank227_22.1" style="width:1ch" /><span style="display:none" id="clozeAnswer227_22.1">JXUwMDNh
+</span>            <br/>
+			</td>
+			<td style="background-color: #ccccff">WHERE </td>
+			<td>              <label for="clozeBlank227_22.2" class="sr-av">Rellenar huecos (3):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank227_22.2" style="width:1ch" /><span style="display:none" id="clozeAnswer227_22.2">JXUwMDNh
+</span>            <br/>
+			</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td align="right"> a)</td>
+			<td>IDPedido </td>
+			<td align="right">a) </td>
+			<td>* </td>
+			<td align="right">a) </td>
+			<td>IDPedido = "madrid"<br/>
+			</td>
+		</tr>
+		<tr>
+			<td align="right"> b)</td>
+			<td>Pedidos </td>
+			<td align="right">b) </td>
+			<td>Pedidos </td>
+			<td align="right">b)</td>
+			<td>Pedidos.Ciudad = "madrid" </td>
+		</tr>
+		<tr>
+			<td align="right">
+			<address>
+			c)</address></td>
+			<td>*.IDPedido </td>
+			<td align="right">c)</td>
+			<td>"madrid" </td>
+			<td align="right">c) </td>
+			<td>Pedidos = "madrid" </td>
+		</tr>
+	</tbody>
+</table>
+<div class="block iDevice_buttons"><p><input class="button" type="submit" name="submit227_22" value="Enviar"  id="submit227_22" />
+<input type="button" name="restart227_22" value="Reiniciar" style="display:none" id="restart227_22" onclick="$exe.cloze.restart('227_22')" />
+ <input type="button" name="227_22showAnswersButton" value="Mostrar las respuestas" style="display:none" id="showAnswersButton227_22" onclick="$exe.cloze.fillInputs('227_22')" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span></p></div><div id="clozeScore227_22"></div></div></form></div>
+    <div id="ta227_23" class="feedback js-feedback iDevice_content" style="display:none">
+El símbolo * sustituye a todos los campos de una tabla. Recuerda que en OOo Base se pueden seleccionar también todos los campos de una tabla escribiendo NombreTabla.*
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper TrueFalseIdevice em_iDevice em_iDevice_question" id="id228">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta228_16" class="block iDevice_content">
+
+</div>
+<div class="question">
+<form name="true-false-form-0b228" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 1</h3>
+<div id="taquestion0b228" class="block iDevice_content">
+a) Delante del nombre del campo debe escribirse siempre el nombre de la tabla a la que pertenece. <span style="background-color: #ffff00"></span><br />
+
+</div>
+<p class="iDevice_answer js-required">
+<label for="true0b228"><input type="radio" name="option0b228" id="true0b228" class="exe-radio-option exe-radio-option-0-2-0b228-truefalse" /> Verdadero</label> 
+<label for="false0b228"><input type="radio" name="option0b228" id="false0b228" class="exe-radio-option exe-radio-option-1-2-0b228-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s0b228" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s0b228-result" class="wrong">Falso</strong></p>
+Se escribe el nombre de la tabla cuando la consulta se <span style="background-color: #ffffff">realiza </span>sobre varias tablas.
+
+</div>
+</div>
+<div class="question">
+<form name="true-false-form-1b228" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 2</h3>
+<div id="taquestion1b228" class="block iDevice_content">
+b) En el SELECT debe aparecer el campo implicado en la condición WHERE.<span style="background-color: #ffff00"></span>
+
+</div>
+<p class="iDevice_answer js-required">
+<label for="true1b228"><input type="radio" name="option1b228" id="true1b228" class="exe-radio-option exe-radio-option-0-2-1b228-truefalse" /> Verdadero</label> 
+<label for="false1b228"><input type="radio" name="option1b228" id="false1b228" class="exe-radio-option exe-radio-option-1-2-1b228-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s1b228" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s1b228-result" class="wrong">Falso</strong></p>
+<div align="justify">
+Puede consultarse el contenido de un campo y no incluir dicho campo en la<span style="background-color: #ffffff"> condición, puesto que en las consultas se muestran una serie de campos y sobre alguno o algunos se aplica una condición, no sobre todos.</span>
+</div>
+
+</div>
+</div>
+<div class="question">
+<form name="true-false-form-2b228" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 3</h3>
+<div id="taquestion2b228" class="block iDevice_content">
+c) No es obligatorio utilizar campos de todas las tablas incluidas en la consulta.
+
+</div>
+<p class="iDevice_answer js-required">
+<label for="true2b228"><input type="radio" name="option2b228" id="true2b228" class="exe-radio-option exe-radio-option-0-2-2b228-truefalse" /> Verdadero</label> 
+<label for="false2b228"><input type="radio" name="option2b228" id="false2b228" class="exe-radio-option exe-radio-option-1-2-2b228-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s2b228" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s2b228-result" class="right">Verdadero</strong></p>
+<div align="justify">
+Se pueden filtrar los registros que cumplan una condición en una tabla y mostrar los que la cumplan de otra siempre que ambas tablas estén relacionadas.
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id211">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Importante</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta211_298_7" class="block iDevice_content">
+<p>Los elementos adicionales que se pueden usar en las consultas de selección sirven para nombrar, ordenar o filtrar los campos de la consulta.</p>
+<p>Los más utilizados son AS y ORDER BY.</p>
+<ul>
+<li>La palabra reservada <b>AS</b> establece el alias del nombre de campo que se ha seleccionado inmediatamente delante.</li>
+<li>La cláusula <b>ORDER BY</b> establece el campo o campos por los que se ordenarán los registros de la consulta.</li>
+</ul>
+<p>Si no se especifica nada se ordenarán de forma ascendente, pero puede especificarse ASC (por defecto) o DESC (descendente) tras el nombre de los campos.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper CasestudyIdevice em_iDevice em_iDevice_casestudy" id="id213">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Caso práctico</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta213_94" class="block iDevice_content">
+
+</div>
+<div id="taquesQuestion0b213" class="block iDevice_content">
+<p>¿Podría utilizarse la siguiente expresión? ¿Qué significado tiene?</p>
+<table class="EducaAnd_bordeCOM" cellpadding="5" border="1" align="center">
+<tbody>
+<tr>
+<td>SELECT "IDPedido", "CiudadDestinatario" FROM "Pedidos" ORDER BY "CiudadDestinatario" ASC, "IDPedido" DESC</td>
+</tr>
+</tbody>
+</table>
+</div>
+<form name="feedback-form-quesFeedback0b213" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b213text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b213" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<div id="feedback-quesFeedback0b213" class="feedback js-feedback js-hidden">
+<h3 class="js-sr-av">Retroalimentación</h3>
+<p>El resultado es una vista ordenada alfabéticamente en orden ascendente por ciudades y de mayor a menor por número de pedido.</p>
+<div style="text-align: center;"><img src="datos_order_by.png" alt="datos order by" title="datos order by" width="190" height="127" /></div>
+<div style="text-align: center;"><em><span style="font-size: 10pt;">Datos consulta order by.</span></em></div></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice em_iDevice_saber" id="id254">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Para saber más</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta254_303_10" class="block iDevice_content">
+<p>Existen otras palabras reservadas que permiten añadir opciones a la forma de ordenar los registros. El más común es <b>DISTINCT</b>.</p>
+<p></p>
+<p>Esta palabra se añade tras el comando SELECT para evitar que se muestren filas iguales. Utilizando DISTINCT no pueden aparecer dos filas idénticas.</p>
+<p></p>
+<div align="justify"><img src="64697374696e746f735f626f74c3b36e.png" alt="distintos" title="distintos" width="70" height="70" align="left" /></div>
+<p>La opción DISTINCT es la más utilizada para simplificar la visualización de la consulta. En OOo Base también se puede activar en la vista de diseño de consultas mediante el icono "valores unívocos".</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="52_clusulas_y_palabras_reservadas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="54_consultas_de_accin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.2. Tipos de datos | Tecnología de la Información y la Comunicación: Bases de datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="IEDA, Ana Echarri" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-49"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Tecnología de la Información y la Comunicación: Bases de datos</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tecnologías de la Información y la Comuniación: Bases de datos</a></li>
+   <li><a href="1_bases_de_datos_definicin.html" class="daddy">1. Bases de datos. Definición</a>
+   <ul class="other-section">
+      <li><a href="11_diseo_de_bases_de_datos.html" class="no-ch">1.1. Diseño de Bases de datos</a></li>
+      <li><a href="12_elementos_de_diseo.html" class="no-ch">1.2. Elementos de diseño</a></li>
+      <li><a href="13_bases_de_datos_relacionales.html" class="no-ch">1.3. Bases de datos relacionales</a></li>
+      <li><a href="14_accesos_y_usuarios.html" class="no-ch">1.4. Accesos y usuarios</a></li>
+   </ul>
+   </li>
+   <li><a href="2_sistemas_de_gestin_de_bases_de_datos.html" class="daddy">2. Sistemas de gestión de bases de datos</a>
+   <ul class="other-section">
+      <li><a href="21_openofficeorg_base.html" class="no-ch">2.1. OpenOffice.org Base</a></li>
+      <li><a href="22_creacin_de_una_base_de_datos.html" class="no-ch">2.2. Creación de una base de datos</a></li>
+      <li><a href="23_entorno_de_trabajo.html" class="no-ch">2.3. Entorno de trabajo</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="3_tablas_y_relaciones.html" class="current-page-parent daddy">3. Tablas y Relaciones</a>
+   <ul>
+      <li><a href="31_creacin_de_tablas.html" class="no-ch">3.1. Creación de tablas</a></li>
+      <li id="active"><a href="32_tipos_de_datos.html" class="active no-ch">3.2. Tipos de datos</a></li>
+      <li><a href="33_edicin_de_tablas_y_registros.html" class="no-ch">3.3. Edición de tablas y registros</a></li>
+      <li><a href="34_operaciones_con_registros.html" class="no-ch">3.4. Operaciones con registros</a></li>
+      <li><a href="35_relaciones.html" class="no-ch">3.5. Relaciones</a></li>
+   </ul>
+   </li>
+   <li><a href="4_manipulacin_y_edicin_de_bases_de_datos.html" class="daddy">4.- Manipulación y edición de Bases de datos</a>
+   <ul class="other-section">
+      <li><a href="41_consultas.html" class="daddy">4.1. Consultas</a>
+      <ul class="other-section">
+         <li><a href="411_asistente.html" class="no-ch">4.1.1. Asistente</a></li>
+         <li><a href="412_vista_diseo.html" class="no-ch">4.1.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="42_formularios.html" class="daddy">4.2. Formularios</a>
+      <ul class="other-section">
+         <li><a href="421_asistente.html" class="no-ch">4.2.1. Asistente</a></li>
+         <li><a href="422_vista_diseo.html" class="no-ch">4.2.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="43_informes.html" class="daddy">4.3. Informes</a>
+      <ul class="other-section">
+         <li><a href="431_asistente.html" class="no-ch">4.3.1. Asistente</a></li>
+         <li><a href="432_edicin.html" class="no-ch">4.3.2. Edición</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="5_lengua_sql.html" class="daddy">5. Lengua SQL</a>
+   <ul class="other-section">
+      <li><a href="51_comandos_y_sintaxis.html" class="no-ch">5.1. Comandos y sintaxis</a></li>
+      <li><a href="52_clusulas_y_palabras_reservadas.html" class="no-ch">5.2. Cláusulas y palabras reservadas</a></li>
+      <li><a href="53_consultas_de_seleccin.html" class="no-ch">5.3. Consultas de selección</a></li>
+      <li><a href="54_consultas_de_accin.html" class="no-ch">5.4. Consultas de acción</a></li>
+   </ul>
+   </li>
+   <li><a href="resumen.html" class="no-ch">Resumen</a></li>
+   <li><a href="imprimible.html" class="no-ch">Imprimible</a></li>
+   <li><a href="aviso_legal.html" class="no-ch">Aviso Legal</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="31_creacin_de_tablas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="33_edicin_de_tablas_y_registros.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">3.2. Tipos de datos</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id114">
+<div class="iDevice emphasis0">
+<div id="ta114_1" class="block iDevice_content">
+<p align="justify">¿Recuerdas las dos condiciones que debe cumplir toda base de datos? <strong>Tener integridad y no tener redundancia.</strong></p>
+<p align="justify"> ¿Recuerdas en qué consiste definir una entidad? Asignar un nombre y determinar sus componentes (campos) y sus atributos (propiedades de los campos).</p>
+<p align="justify"> Siendo la tabla el elemento fundamental en el que se almacena la información de la base de datos, su creación debe respetar estas condiciones.</p>
+<p align="justify"> OOo Base permite determinar las propiedades de cada campo y definir así el tipo de datos que se puede introducir, asegurando la integridad. Por ejemplo, en un campo de tipo fecha solamente se podrá introducir una fecha en el formato preestablecido.</p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id128">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Importante</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta128_290_7" class="block iDevice_content">
+<p>Los tipos de datos que determinan el contenido de un campo pueden ser:</p>
+<ul>
+<li><b>alfanuméricos</b>.- almacenan texto y números, tratándolos como caracteres.</li>
+<li><b>numéricos</b>.- almacenan números con los que se pueden realizar operaciones matemáticas.</li>
+<li><b>temporales</b>.- almacenan fechas y horas.</li>
+<li><b>booleanos</b>.- almacenan el valor SI o NO.</li>
+<li><b>especiales</b>.- se agrupan en esta categoría el resto de tipos, tales como imágenes y objetos.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id116">
+<div class="iDevice emphasis0">
+<div id="ta116_1" class="block iDevice_content">
+<div align="justify">En cada categoría hay varias opciones según las necesidades, que detallan los valores a introducir. En las siguientes tablas se describen los más comunes.</div>
+<div align="justify"> </div>
+<table class="EducaAnd_bordeCOM" style="float: left;" cellspacing="5" cellpadding="10" border="1">
+<tbody>
+<tr>
+<td colspan="2"><b>Alfanuméricos</b></td>
+</tr>
+<tr>
+<td>Texto [VARCHAR]</td>
+<td>Texto de tamaño variable.</td>
+</tr>
+<tr>
+<td>Nota [LONGVARCHAR]</td>
+<td>Para texto muy largo, hasta 2 Gb.</td>
+</tr>
+<tr>
+<td colspan="2"><b>Numéricos</b></td>
+</tr>
+<tr>
+<td>Integer [INTEGER]</td>
+<td>Entero de 10 cifras.</td>
+</tr>
+<tr>
+<td>Número [NUMERIC]</td>
+<td>Real con los decimales fijados.</td>
+</tr>
+<tr>
+<td>Float [FLOAT]</td>
+<td>Numérico con coma flotante de precisión simple.</td>
+</tr>
+<tr>
+<td colspan="2"><b>Temporales</b></td>
+</tr>
+<tr>
+<td>Fecha [DATE]</td>
+<td>Valores de tipo día, mes, año.</td>
+</tr>
+<tr>
+<td>Hora [TIME]</td>
+<td>Valores de tipo hora, minuto, segundo.</td>
+</tr>
+<tr>
+<td colspan="2"><b>Booleanos</b></td>
+</tr>
+<tr>
+<td>Sí/No [BOOLEAN]</td>
+<td>Valor lógico Verdadero o Falso</td>
+</tr>
+<tr>
+<td colspan="2"><b>Especiales</b></td>
+</tr>
+<tr>
+<td>Imagen [LONGVARBINARY]</td>
+<td>Tipo de imagen.</td>
+</tr>
+<tr>
+<td>OTHER [OTHER]</td>
+<td>Tipo de objeto</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper ClozeIdevice em_iDevice em_iDevice_question" id="id117">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta117_21" class="block instructions iDevice_content">
+<p>
+¿Qué tipo de campo corresponde a cada dato?
+</p>
+<p>
+¡Ojo, se han incluido todos los formatos, no sólo los que aparecen en las tablas! 
+</p>
+
+</div>
+
+    <div class="activity" id="activity-117_22"><form name="cloze-form-117_22" action="#" class="activity-form cloze-activity-form"><div id="cloze117_22"><input type="hidden" name="clozeFlag117_22.strictMarking" id="clozeFlag117_22.strictMarking" value="true"/>
+<input type="hidden" name="clozeFlag117_22.checkCaps" id="clozeFlag117_22.checkCaps" value="false"/>
+<input type="hidden" name="clozeFlag117_22.instantMarking" id="clozeFlag117_22.instantMarking" value="false"/>
+<table border="0" cellspacing="5">
+	<tbody>
+		<tr>
+			<td>35.175<br/>
+			</td>
+			<td> <label for="clozeBlank117_22.0" class="sr-av">Rellenar huecos (1):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank117_22.0" style="width:7ch" /><span style="display:none" id="clozeAnswer117_22.0">JXUwMDExJXUwMDI3JXUwMDFhJXUwMDExJXUwMDAyJXUwMDAyJXUwMDE3
+</span> <br/>
+			</td>
+			<td>125,57 € </td>
+			<td> <label for="clozeBlank117_22.1" class="sr-av">Rellenar huecos (2):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank117_22.1" style="width:6ch" /><span style="display:none" id="clozeAnswer117_22.1">JXUwMDE2JXUwMGI0JXUwMDk3JXUwMDA4JXUwMDE3JXUwMDFk
+</span> <br/>
+			</td>
+		</tr>
+		<tr>
+			<td>El pedido se retrasará dos semanas</td>
+			<td> <label for="clozeBlank117_22.2" class="sr-av">Rellenar huecos (3):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank117_22.2" style="width:5ch" /><span style="display:none" id="clozeAnswer117_22.2">JXUwMDBjJXUwMDMxJXUwMDFkJXUwMDBjJXUwMDFi
+</span>  </td>
+			<td>15/03/10 12:35</td>
+			<td> <label for="clozeBlank117_22.3" class="sr-av">Rellenar huecos (4):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank117_22.3" style="width:10ch" /><span style="display:none" id="clozeAnswer117_22.3">JXUwMDFlJXUwMDIzJXUwMDA2JXUwMDBiJXUwMDA5JXUwMDRlJXUwMDY3JXUwMDI3JXUwMDFkJXUw
+MDEz
+</span> </td>
+		</tr>
+	</tbody>
+</table>
+<div class="block iDevice_buttons"><p><input class="button" type="submit" name="submit117_22" value="Enviar"  id="submit117_22" />
+<input type="button" name="restart117_22" value="Reiniciar" style="display:none" id="restart117_22" onclick="$exe.cloze.restart('117_22')" />
+ <input type="button" name="117_22showAnswersButton" value="Mostrar las respuestas" style="display:none" id="showAnswersButton117_22" onclick="$exe.cloze.fillInputs('117_22')" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span></p></div><div id="clozeScore117_22"></div></div></form></div></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id118">
+<div class="iDevice emphasis0">
+<div id="ta118_1" class="block iDevice_content">
+<div align="justify">Cuando se selecciona un tipo de dato, en el panel inferior se muestran una serie de propiedades que permiten definir la consistencia y el formato del dato introducido.</div>
+<div align="justify"></div>
+<div align="justify"> </div>
+<div align="justify">El número de propiedades varía según el tipo de dato, pudiendo llegar a seis:</div>
+<div align="justify"></div>
+<div align="justify">
+<table cellspacing="5" border="0">
+<tbody>
+<tr>
+<td rowspan="2" style="border: 1px solid #ffffff;">
+<div align="justify"></div>
+<div></div>
+<div>
+<ul>
+<li>Valor automático.- permite al programa asignar automáticamente un valor entero consecutivo a cada registro que se añada si se selecciona Sí.</li>
+<li>Entrada requerida.- evita que el campo se quede en blanco si se selecciona Sí.</li>
+<li>Tamaño.- especifica la longitud del campo.</li>
+<li>Decimales.- especifica el número de decimales del tamaño total.</li>
+<li>Valor predeterminado.- permite asignar un valor por defecto.</li>
+<li>Ejemplo formato.- permite asignar un formato. Muy útil en los campos de tipo fecha, hora y numérico de moneda.</li>
+</ul>
+</div>
+</td>
+<td rowspan="2" style="border: 1px solid #ffffff;">
+<p><img src="propiedades_de_campo.png" alt="propiedades del campo" title="propiedades del campo" width="380" height="157" /><span style="font-size: xx-small;"></span></p>
+<p style="text-align: center;"><em><span style="font-size: 10pt;">Propiedades del campo</span></em><span style="font-size: xx-small;"></span></p>
+</td>
+</tr>
+<tr align="center"></tr>
+</tbody>
+</table>
+</div>
+<div align="justify"></div>
+<div></div>
+<div align="right"></div>
+<div align="justify"></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper TrueFalseIdevice em_iDevice em_iDevice_question" id="id119">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta119_16" class="block iDevice_content">
+<div align="justify">Crea una tabla con distintos tipos de campos y cambia sus propiedades. Después, indica si las siguientes afirmaciones son verdaderas o falsas.</div>
+<p></p>
+</div>
+<div class="question">
+<form name="true-false-form-0b119" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 1</h3>
+<div id="taquestion0b119" class="block iDevice_content">
+<div align="justify">
+a) Cuando se define un campo como llave primaria se selecciona automáticamente la propiedad &quot;Entrada requerida&quot; a &quot;Sí&quot;.
+</div>
+
+</div>
+<p class="iDevice_answer js-required">
+<label for="true0b119"><input type="radio" name="option0b119" id="true0b119" class="exe-radio-option exe-radio-option-0-2-0b119-truefalse" /> Verdadero</label> 
+<label for="false0b119"><input type="radio" name="option0b119" id="false0b119" class="exe-radio-option exe-radio-option-1-2-0b119-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s0b119" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s0b119-result" class="right">Verdadero</strong></p>
+<div align="justify">
+Lo selecciona el programa, puesto que este es el campo identificativo de cada registro.
+</div>
+
+</div>
+</div>
+<div class="question">
+<form name="true-false-form-1b119" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 2</h3>
+<div id="taquestion1b119" class="block iDevice_content">
+<div align="justify">
+b) La propiedad &quot;Valor automático&quot; se permite en todos los tipos numéricos.
+</div>
+
+</div>
+<p class="iDevice_answer js-required">
+<label for="true1b119"><input type="radio" name="option1b119" id="true1b119" class="exe-radio-option exe-radio-option-0-2-1b119-truefalse" /> Verdadero</label> 
+<label for="false1b119"><input type="radio" name="option1b119" id="false1b119" class="exe-radio-option exe-radio-option-1-2-1b119-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s1b119" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s1b119-result" class="wrong">Falso</strong></p>
+<div align="justify">
+Solamente en Integer y BigInt.
+</div>
+
+</div>
+</div>
+<div class="question">
+<form name="true-false-form-2b119" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 3</h3>
+<div id="taquestion2b119" class="block iDevice_content">
+<div align="justify">
+c)  El valor asignado a la propiedad &quot;Valor predeterminado&quot; es el que aparecerá en todos los registros de la tabla.
+</div>
+
+</div>
+<p class="iDevice_answer js-required">
+<label for="true2b119"><input type="radio" name="option2b119" id="true2b119" class="exe-radio-option exe-radio-option-0-2-2b119-truefalse" /> Verdadero</label> 
+<label for="false2b119"><input type="radio" name="option2b119" id="false2b119" class="exe-radio-option exe-radio-option-1-2-2b119-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s2b119" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s2b119-result" class="right">Verdadero</strong></p>
+<div align="justify">
+Si se desea modificarlo hay que editar el registro. Si no es así, aparecerá siempre este valor.<br />
+</div>
+
+</div>
+</div>
+<div class="question">
+<form name="true-false-form-3b119" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 4</h3>
+<div id="taquestion3b119" class="block iDevice_content">
+<div align="justify">
+d) El número de decimales se añade a la longitud especificada en la propiedad &quot;Tamaño&quot;.
+</div>
+
+</div>
+<p class="iDevice_answer js-required">
+<label for="true3b119"><input type="radio" name="option3b119" id="true3b119" class="exe-radio-option exe-radio-option-0-2-3b119-truefalse" /> Verdadero</label> 
+<label for="false3b119"><input type="radio" name="option3b119" id="false3b119" class="exe-radio-option exe-radio-option-1-2-3b119-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s3b119" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s3b119-result" class="wrong">Falso</strong></p>
+Indica cuántos caracteres de la propiedad &quot;Tamaño&quot; serán decimales. El resto serán enteros.
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice em_iDevice_saber" id="id49">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Para saber más</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta49_289_10" class="block iDevice_content">
+<p>Si quieres avanzar en tus destrezas con las bases de datos, no pierdas de vista otros detalles de este panel:</p>
+<ul>
+<li>¿Qué tamaño tiene predefinido el tipo Número [NUMERIC]?</li>
+<li>¿Y el tipo Texto [VARCHAR]?</li>
+<li>¿Cuáles son los formatos predeterminados de fecha y hora?</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="31_creacin_de_tablas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="33_edicin_de_tablas_y_registros.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

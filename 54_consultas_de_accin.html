@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.4. Consultas de acción | Tecnología de la Información y la Comunicación: Bases de datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="IEDA, Ana Echarri" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-67"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Tecnología de la Información y la Comunicación: Bases de datos</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tecnologías de la Información y la Comuniación: Bases de datos</a></li>
+   <li><a href="1_bases_de_datos_definicin.html" class="daddy">1. Bases de datos. Definición</a>
+   <ul class="other-section">
+      <li><a href="11_diseo_de_bases_de_datos.html" class="no-ch">1.1. Diseño de Bases de datos</a></li>
+      <li><a href="12_elementos_de_diseo.html" class="no-ch">1.2. Elementos de diseño</a></li>
+      <li><a href="13_bases_de_datos_relacionales.html" class="no-ch">1.3. Bases de datos relacionales</a></li>
+      <li><a href="14_accesos_y_usuarios.html" class="no-ch">1.4. Accesos y usuarios</a></li>
+   </ul>
+   </li>
+   <li><a href="2_sistemas_de_gestin_de_bases_de_datos.html" class="daddy">2. Sistemas de gestión de bases de datos</a>
+   <ul class="other-section">
+      <li><a href="21_openofficeorg_base.html" class="no-ch">2.1. OpenOffice.org Base</a></li>
+      <li><a href="22_creacin_de_una_base_de_datos.html" class="no-ch">2.2. Creación de una base de datos</a></li>
+      <li><a href="23_entorno_de_trabajo.html" class="no-ch">2.3. Entorno de trabajo</a></li>
+   </ul>
+   </li>
+   <li><a href="3_tablas_y_relaciones.html" class="daddy">3. Tablas y Relaciones</a>
+   <ul class="other-section">
+      <li><a href="31_creacin_de_tablas.html" class="no-ch">3.1. Creación de tablas</a></li>
+      <li><a href="32_tipos_de_datos.html" class="no-ch">3.2. Tipos de datos</a></li>
+      <li><a href="33_edicin_de_tablas_y_registros.html" class="no-ch">3.3. Edición de tablas y registros</a></li>
+      <li><a href="34_operaciones_con_registros.html" class="no-ch">3.4. Operaciones con registros</a></li>
+      <li><a href="35_relaciones.html" class="no-ch">3.5. Relaciones</a></li>
+   </ul>
+   </li>
+   <li><a href="4_manipulacin_y_edicin_de_bases_de_datos.html" class="daddy">4.- Manipulación y edición de Bases de datos</a>
+   <ul class="other-section">
+      <li><a href="41_consultas.html" class="daddy">4.1. Consultas</a>
+      <ul class="other-section">
+         <li><a href="411_asistente.html" class="no-ch">4.1.1. Asistente</a></li>
+         <li><a href="412_vista_diseo.html" class="no-ch">4.1.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="42_formularios.html" class="daddy">4.2. Formularios</a>
+      <ul class="other-section">
+         <li><a href="421_asistente.html" class="no-ch">4.2.1. Asistente</a></li>
+         <li><a href="422_vista_diseo.html" class="no-ch">4.2.2. Vista Diseño</a></li>
+      </ul>
+      </li>
+      <li><a href="43_informes.html" class="daddy">4.3. Informes</a>
+      <ul class="other-section">
+         <li><a href="431_asistente.html" class="no-ch">4.3.1. Asistente</a></li>
+         <li><a href="432_edicin.html" class="no-ch">4.3.2. Edición</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="5_lengua_sql.html" class="current-page-parent daddy">5. Lengua SQL</a>
+   <ul>
+      <li><a href="51_comandos_y_sintaxis.html" class="no-ch">5.1. Comandos y sintaxis</a></li>
+      <li><a href="52_clusulas_y_palabras_reservadas.html" class="no-ch">5.2. Cláusulas y palabras reservadas</a></li>
+      <li><a href="53_consultas_de_seleccin.html" class="no-ch">5.3. Consultas de selección</a></li>
+      <li id="active"><a href="54_consultas_de_accin.html" class="active no-ch">5.4. Consultas de acción</a></li>
+   </ul>
+   </li>
+   <li><a href="resumen.html" class="no-ch">Resumen</a></li>
+   <li><a href="imprimible.html" class="no-ch">Imprimible</a></li>
+   <li><a href="aviso_legal.html" class="no-ch">Aviso Legal</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="53_consultas_de_seleccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="resumen.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">5.4. Consultas de acción</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id236">
+<div class="iDevice emphasis0">
+<div id="ta236_1" class="block iDevice_content">
+<div align="justify"></div>
+<div align="justify">Hasta ahora las consultas han sido utilizadas para visualizar parte de los datos contenidos en una o varias tablas y para realizar cálculos con ellos. En ningún caso el contenido de las tablas ha sido modificado.</div>
+<div align="justify"></div>
+<div align="justify">Las consultas de acción se utilizan para actualizar el contenido de las tablas en una sola operación previamente diseñada. Se usan cuando esta operación se repite periódicamente o cuando se pueden modificar valores de campos por lotes evitando así repetir la operación muchas veces.</div>
+<div align="justify"></div>
+<div style="text-align: center;" align="justify"><span style="font-size: 10pt;"><img src="61636369c3b36e.png" alt="consultas de acción" title="consultas de acción" width="228" height="82" /></span><br /><em><span style="font-size: 10pt;">Consultas de acción</span></em></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id219">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Importante</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta219_302_7" class="block iDevice_content">
+<div align="justify">Las <b>consultas de acción</b> son aquellas mediante las que se borran, añaden o modifican registros de una tabla, es decir, el contenido de la tabla tras la ejecución de la consulta es distinto al inicial.</div>
+<div align="justify"></div>
+<div align="justify">Los comandos utilizados son: <b>DELETE, INSERT y UPDATE.</b></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id238">
+<div class="iDevice emphasis0">
+<div id="ta238_1" class="block iDevice_content">
+<h5><span class=" EducaAnd_COM">Consultas de eliminación</span></h5>
+<p> Mediante el comando DELETE FROM WHERE se eliminan los registros de la tabla indicada cuyo valor coincide con el criterio expresado en la cláusula WHERE.</p>
+<p>Sintaxis:</p>
+<table style="background-color: #ccccff;" border="0" align="center">
+<tbody>
+<tr>
+<td>DELETE * FROM Tabla WHERE Criterio</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper TrueFalseIdevice em_iDevice em_iDevice_question" id="id239">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta239_16" class="block iDevice_content">
+
+</div>
+<div class="question">
+<form name="true-false-form-0b239" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 1</h3>
+<div id="taquestion0b239" class="block iDevice_content">
+a) El comando DELETE elimina registros completos.
+
+</div>
+<p class="iDevice_answer js-required">
+<label for="true0b239"><input type="radio" name="option0b239" id="true0b239" class="exe-radio-option exe-radio-option-0-2-0b239-truefalse" /> Verdadero</label> 
+<label for="false0b239"><input type="radio" name="option0b239" id="false0b239" class="exe-radio-option exe-radio-option-1-2-0b239-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s0b239" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s0b239-result" class="right">Verdadero</strong></p>
+Se eliminan todos los campos de los registros que cumplen la condición.
+
+</div>
+</div>
+<div class="question">
+<form name="true-false-form-1b239" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 2</h3>
+<div id="taquestion1b239" class="block iDevice_content">
+b) Si no se especifica ninguna condición en la cláusula WHERE no se borra nada. 
+
+</div>
+<p class="iDevice_answer js-required">
+<label for="true1b239"><input type="radio" name="option1b239" id="true1b239" class="exe-radio-option exe-radio-option-0-2-1b239-truefalse" /> Verdadero</label> 
+<label for="false1b239"><input type="radio" name="option1b239" id="false1b239" class="exe-radio-option exe-radio-option-1-2-1b239-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s1b239" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s1b239-result" class="wrong">Falso</strong></p>
+Se borra toda la tabla.
+
+</div>
+</div>
+<div class="question">
+<form name="true-false-form-2b239" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 3</h3>
+<div id="taquestion2b239" class="block iDevice_content">
+c) Si la operación no es la esperada se puede volver al estado anterior con el botón deshacer.
+
+</div>
+<p class="iDevice_answer js-required">
+<label for="true2b239"><input type="radio" name="option2b239" id="true2b239" class="exe-radio-option exe-radio-option-0-2-2b239-truefalse" /> Verdadero</label> 
+<label for="false2b239"><input type="radio" name="option2b239" id="false2b239" class="exe-radio-option exe-radio-option-1-2-2b239-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s2b239" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s2b239-result" class="wrong">Falso</strong></p>
+La ejecución de la consulta supone el borrado definitivo de los registros.
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id241">
+<div class="iDevice emphasis0">
+<div id="ta241_1" class="block iDevice_content">
+<h5><span class=" EducaAnd_COM">Consultas de inserción</span></h5>
+<p align="justify"> Mediante el comando INSERT INTO se añaden los registros que cumplan la condición expresada en la claúsula WHERE a la tabla indicada.</p>
+<p>Sintaxis:</p>
+<table style="background-color: #ccccff;" border="0" align="center">
+<tbody>
+<tr>
+<td>INSERT INTO tabla (campo1, campo2, ...) VALUES (valor1, valor2, ...)</td>
+</tr>
+</tbody>
+</table>
+<p align="center"> </p>
+<p align="justify">Este comando tiene ciertas peculiaridades:</p>
+<ul>
+<li>Requiere conocimientos sobre los tipos de datos contenidos en los campos y el resto de restricciones impuestas en su definición. Los valores de campos de tipo texto deben escribirse entre comillas y las fechas en el formato adecuado.</li>
+<li>A los valores de los campos no especificados en la cláusula VALUES se les asignará un valor NULL si las especificaciones del campo lo permiten o el valor preestablecido por defecto.</li>
+<li>Cada instrucción INSERT añade un solo registro a una sola tabla. Para añadir más registros se pueden separar bloques de los valores de un registro (entre paréntesis) por comas u obtener previamente los datos de otra tabla mediante un SELECT.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper CasestudyIdevice em_iDevice em_iDevice_casestudy" id="id242">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Caso práctico</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta242_10" class="block iDevice_content">
+Inserta un nuevo registro en la tabla Tipo_transporte para el transporte por tren de alta velocidad, denominado AVE con el número 6. No asignes ningún valor al tiempo de entrega.<br />
+
+</div>
+<div id="taquesQuestion0b242" class="block iDevice_content">
+Para que la sentencia sea correcta ten en cuenta los tipos de datos de cada campo.
+
+</div>
+<form name="feedback-form-quesFeedback0b242" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b242text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b242" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<div id="feedback-quesFeedback0b242" class="feedback js-feedback js-hidden">
+<h3 class="js-sr-av">Retroalimentación</h3>
+<table style="background-color: #ccccff" align="center" border="0">
+	<tbody>
+		<tr>
+			<td>INSERT INTO &quot;Transporte&quot; (&quot;IDTransporte&quot;, &quot;TipoTransporte&quot;, &quot;Costes&quot;) VALUES (6, &quot;AVE&quot;, &quot;10 %&quot;) <br />
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id243">
+<div class="iDevice emphasis0">
+<div id="ta243_1" class="block iDevice_content">
+<h5><span class=" EducaAnd_COM">Consultas de modificación</span></h5>
+<p align="justify"> Mediante el comando <span style="background-color: #ffffff;">UPDATE m</span>odifica el valor de los campos indicados en la cláusula SET para los registros que cumplan el criterio expresado en la cláusula WHERE. Si no se especifica ninguna condición se actualizarán todos los registros de la tabla.</p>
+<p>Sintaxis:</p>
+<table style="background-color: #ccccff;" border="0" align="center">
+<tbody>
+<tr>
+<td>UPDATE tabla SET campo1 = valor1 WHERE condición<span style="background-color: #ffff00;"></span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Esta sentencia es especialmente útil cuando se desea actualizar muchos registros a un valor determinado.</p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper ReflectionIdevice em_iDevice em_iDevice_reflection" id="id244">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Ejercicios resueltos</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta244_8" class="block iDevice_content">
+Crea una consulta en vista SQL que cambie la dirección del cliente denominado &quot;empresa 3&quot;. Elige tú la nueva dirección.
+
+</div>
+<form name="feedback-form-244_9" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedback244_9text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-244_9" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<div id="feedback-244_9" class="feedback js-feedback js-hidden">
+<h3 class="js-sr-av">Retroalimentación</h3>
+<table style="background-color: #ccccff" align="center" border="0">
+	<tbody>
+		<tr>
+			<td>UPDATE &quot;Pedidos&quot; SET &quot;DireccionDestinatario&quot; = &quot;c/ nueva dirección&quot; WHERE &quot;Destinatario&quot; = &quot;empresa 3&quot; <br />
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper ClozeIdevice em_iDevice em_iDevice_question" id="id245">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta245_21" class="block instructions iDevice_content">
+<p>
+Las consultas con UPDATE pueden modificar un solo registro o varios a la vez.
+</p>
+<p>
+Responde 1 si la consulta solo modifica un registro y 2 si modifica varios. 
+</p>
+
+</div>
+
+    <div class="activity" id="activity-245_22"><form name="cloze-form-245_22" action="#" class="activity-form cloze-activity-form"><div id="cloze245_22"><input type="hidden" name="clozeFlag245_22.strictMarking" id="clozeFlag245_22.strictMarking" value="true"/>
+<input type="hidden" name="clozeFlag245_22.checkCaps" id="clozeFlag245_22.checkCaps" value="false"/>
+<input type="hidden" name="clozeFlag245_22.instantMarking" id="clozeFlag245_22.instantMarking" value="false"/>
+<input type="hidden" name="clozeVar245_22.feedbackId" id="clozeVar245_22.feedbackId" value="ta245_23"/>
+<table border="0" cellspacing="5">
+	<tbody>
+		<tr>
+			<td style="background-color: #ccccff">
+			UPDATE "Pedidos" SET "Provincia" = "Madrid" WHERE "Provincia" = "madrid" <br/>
+			</td>
+			<td>   <label for="clozeBlank245_22.0" class="sr-av">Rellenar huecos (1):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank245_22.0" style="width:1ch" /><span style="display:none" id="clozeAnswer245_22.0">JXUwMDZh
+</span>        <br/>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: #ccccff">
+			UPDATE "Transporte" SET "TipoTransporte" = "urgente" WHERE "IDTransporte" = "2" <br/>
+			</td>
+			<td>   <label for="clozeBlank245_22.1" class="sr-av">Rellenar huecos (2):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank245_22.1" style="width:1ch" /><span style="display:none" id="clozeAnswer245_22.1">JXUwMDY5
+</span>    <br/>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="block iDevice_buttons"><p><input class="button" type="submit" name="submit245_22" value="Enviar"  id="submit245_22" />
+<input type="button" name="restart245_22" value="Reiniciar" style="display:none" id="restart245_22" onclick="$exe.cloze.restart('245_22')" />
+ <input type="button" name="245_22showAnswersButton" value="Mostrar las respuestas" style="display:none" id="showAnswersButton245_22" onclick="$exe.cloze.fillInputs('245_22')" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span></p></div><div id="clozeScore245_22"></div></div></form></div>
+    <div id="ta245_23" class="feedback js-feedback iDevice_content" style="display:none">
+<ul>
+	<li>La primera consulta cambia el texto de todos los registros cuya provincia sea &quot;madrid&quot; por &quot;Madrid&quot;.
+	</li>
+</ul>
+<ul>
+	<li>La segunda consulta cambia la denominación de tipo de transporte 2 a transporte &quot;urgente&quot;. El tipo de transporte es un campo llave primaria con valor único por lo que la consulta sólo afectará a un registro.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice em_iDevice_saber" id="id261">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Para saber más</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta261_304_10" class="block iDevice_content">
+<p>El comando DELETE permite borrar registros de varias tablas indicándolo en la cláusula FROM.</p>
+<p>En este caso la sintaxis requiere que delante de cada nombre de campo se especifique su tabla de procedencia: </p>
+<table style="width: 600px; margin-left: auto; margin-right: auto;" border="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>DELETE tabla1.* , tabla2.* FROM tabla1, tabla2 WHERE condición</strong><span></span></td>
+</tr>
+</tbody>
+</table>
+<p align="justify">La condición puede ser simple (sólo afecta a un campo) mediante un operador (&lt;,&gt;,=, BETWEEN, LIKE, IN) o compuesta (están implicados varios campos de una o de las dos tablas) median operadores como AND y OR.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice em_iDevice_curiosidad" id="id36">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Curiosidad</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta36_276_18" class="block iDevice_content">
+<p>Nuestro gestor de bases de datos OOo Base no permite crear consultas de acción por lo que los ejercicios de este apartado serán simulados, pero no podrás probarlos.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="53_consultas_de_seleccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="resumen.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
